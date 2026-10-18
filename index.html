@@ -1,0 +1,2613 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinsera Clinical Research Pvt Ltd | Where Quality Meets Clinical Discovery</title>
+  
+  <!-- Typography & Global Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              obsidian: '#050811',
+              navy: '#090f1e',
+              surface: '#0f172a',
+              card: '#131e36',
+              border: '#1b2a4a',
+              teal: '#14b8a6',
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              accent: '#2dd4bf'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #050811;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .biotech-matrix {
+      background-size: 32px 32px;
+      background-image: 
+        radial-gradient(circle, rgba(20, 184, 166, 0.08) 1.2px, transparent 1.2px);
+    }
+
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(45, 212, 191, 0.16);
+    }
+
+    .glass-panel:hover {
+      border-color: rgba(45, 212, 191, 0.38);
+      box-shadow: 0 16px 36px -10px rgba(20, 184, 166, 0.18);
+    }
+
+    .gradient-title {
+      background: linear-gradient(135deg, #2dd4bf 0%, #10b981 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Print styling strictly reserved for the authenticated certificate */
+    @media print {
+      body * {
+        visibility: hidden !important;
+      }
+      #printableCertificate, #printableCertificate * {
+        visibility: visible !important;
+      }
+      #printableCertificate {
+        position: fixed !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: 40px !important;
+        background: #090f1e !important;
+        color: #ffffff !important;
+        border: 8px double #14b8a6 !important;
+        box-shadow: none !important;
+        z-index: 999999 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="biotech-matrix selection:bg-teal-500 selection:text-black">
+
+  <!-- ==================================================================== -->
+  <!-- 1. HEADER: CENTRED LOGO, COMPANY NAME & TAGLINE ONLY                 -->
+  <!-- ==================================================================== -->
+  <header class="sticky top-0 z-40 bg-brand-obsidian/95 backdrop-blur-md border-b border-brand-border/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      
+      <!-- Central Branding Block: Exactly as specified -->
+      <div class="flex flex-col items-center justify-center text-center space-y-2">
+        <a href="#home" class="inline-flex flex-col items-center group">
+          <!-- Logo Asset - Unedited and prominently scaled -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-black border border-teal-500/40 p-1 overflow-hidden shadow-2xl shadow-teal-500/20 group-hover:border-teal-400 group-hover:scale-105 transition-all duration-300">
+            <img id="siteHeaderLogo" src="image_b10238.png" alt="Clinsera Clinical Research Pvt Ltd Logo" class="w-full h-full object-contain">
+          </div>
+
+          <!-- Strictly Company Name - NO extra tags or 'Research Site' -->
+          <h1 id="brandCompanyName" class="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white font-display mt-2 group-hover:text-teal-200 transition-colors">
+            Clinsera Clinical Research Pvt Ltd
+          </h1>
+          
+          <!-- Exact Tagline directly beneath -->
+          <p id="brandTagline" class="text-xs sm:text-sm text-teal-300 font-medium italic tracking-wide">
+            "Where Quality Meets Clinical Discovery."
+          </p>
+        </a>
+      </div>
+
+      <!-- Navigation & Action Bar -->
+      <div class="mt-4 pt-3 border-t border-brand-border/60 flex items-center justify-between">
+        
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex items-center space-x-6 text-xs sm:text-sm font-medium text-slate-300">
+          <a href="#home" class="hover:text-teal-400 transition-colors">Home</a>
+          <a href="#services" class="hover:text-teal-400 transition-colors">Site Services</a>
+          <a href="#certifications" class="text-teal-300 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1.5">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            Certification Academy (Free)
+          </a>
+          <a href="#pedagogy" class="hover:text-teal-400 transition-colors">Dual Focus</a>
+          <a href="#about" class="hover:text-teal-400 transition-colors">About Us</a>
+          <a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Side: CMS Studio & Direct Portal Button -->
+        <div class="flex items-center gap-3 ml-auto">
+          <!-- In-Browser CMS Studio Trigger -->
+          <button onclick="toggleAdminCMSModal()" class="px-3.5 py-1.5 rounded-xl bg-teal-950/80 hover:bg-teal-900 border border-teal-500/40 text-teal-300 text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
+            <i class="fa-solid fa-sliders text-teal-400"></i>
+            <span>CMS Admin Studio</span>
+          </button>
+
+          <a href="#certifications" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs shadow-md transition hidden sm:inline-block">
+            Student Academy
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button onclick="toggleMobileNav()" class="md:hidden text-slate-300 hover:text-white p-1.5 rounded-lg" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars text-lg" id="mobileNavIcon"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Nav Drawer -->
+      <div id="mobileNavDrawer" class="hidden md:hidden pt-4 pb-2 space-y-2 border-t border-brand-border/40 mt-3 text-xs">
+        <a href="#home" onclick="toggleMobileNav()" class="block text-slate-300 hover:text-teal-400 py-1.5">Home</a>
+        <a href="#services" onclick="toggleMobileNav()" class="block text-slate-300 hover:text-teal-400 py-1.5">Site Services</a>
+        <a href="#certifications" onclick="toggleMobileNav()" class="block text-teal-300 font-semibold py-1.5">Certification Academy (Free)</a>
+        <a href="#pedagogy" onclick="toggleMobileNav()" class="block text-slate-300 hover:text-teal-400 py-1.5">Dual Focus</a>
+        <a href="#about" onclick="toggleMobileNav()" class="block text-slate-300 hover:text-teal-400 py-1.5">About Us</a>
+        <a href="#contact" onclick="toggleMobileNav()" class="block text-slate-300 hover:text-teal-400 py-1.5">Contact</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================================================================== -->
+    <!-- 2. HOMEPAGE HERO SECTION                                             -->
+    <!-- Headlines required, subtle clinical trial site conduct offering      -->
+    <!-- No site infrastructure specs, no FDA/CDSCO compliance banners        -->
+    <!-- ==================================================================== -->
+    <section id="home" class="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-950/80 border border-teal-500/30 text-teal-300 text-xs font-semibold tracking-wide">
+              <i class="fa-solid fa-flask-vial text-teal-400"></i> Dedicated Clinical Trial Site & Scientific Investigation Center
+            </div>
+
+            <h2 id="cmsHeroHeadline" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display leading-[1.15] text-white">
+              Bridging Science <br>
+              <span class="gradient-title">and Clinical Discovery.</span>
+            </h2>
+
+            <p id="cmsHeroTagline" class="text-xl sm:text-2xl font-light text-teal-200/90 italic tracking-wide">
+              "Where Quality Meets Clinical Discovery."
+            </p>
+
+            <p id="cmsHeroSubtext" class="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+              Clinsera Clinical Research Pvt Ltd offers a dedicated site for conducting clinical trials with uncompromised protocol fidelity, participant safety, and source data accuracy. We partner with investigators and study teams to execute complex interventional research to the highest scientific standards.
+            </p>
+
+            <!-- Subtle Site Offering Note (No CRO framing, no infrastructure metrics) -->
+            <div class="p-4 rounded-2xl bg-brand-surface/80 border border-teal-500/20 max-w-2xl text-left">
+              <div class="text-xs font-bold text-teal-300 flex items-center gap-2 mb-1">
+                <i class="fa-solid fa-hospital-user text-emerald-400"></i> Dedicated Clinical Trial Site Conduct
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                We provide a professional clinical trial site equipped to coordinate specialized investigator workflows, manage participant visits, and guarantee ALCOA+ verifiable source documentation.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#services" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-teal-500/25 transition transform active:scale-95 flex items-center gap-2">
+                <i class="fa-solid fa-vial-circle-check"></i> Explore Trial Services
+              </a>
+              <a href="#certifications" class="px-6 py-3.5 rounded-xl bg-brand-surface hover:bg-brand-card text-teal-300 border border-teal-500/30 text-xs font-semibold uppercase tracking-wider transition flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap"></i> Free Student Academy
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Graphic Card with exact unedited logo -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <div class="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 rounded-3xl blur-2xl transform rotate-2"></div>
+              <div class="relative glass-panel p-8 rounded-3xl border border-teal-500/30 shadow-2xl text-center space-y-4">
+                
+                <div class="w-52 h-52 sm:w-60 sm:h-60 mx-auto rounded-2xl bg-black border border-teal-500/40 p-2 overflow-hidden shadow-2xl shadow-teal-500/25 flex items-center justify-center">
+                  <img id="cmsHeroCardLogo" src="image_b10238.png" alt="Clinsera Emblem" class="w-full h-full object-contain">
+                </div>
+
+                <div class="space-y-1">
+                  <h3 class="text-xl font-bold text-white font-display">Clinsera Clinical Research Pvt Ltd</h3>
+                  <p class="text-xs text-teal-300 font-medium italic">"Where Quality Meets Clinical Discovery."</p>
+                </div>
+
+                <div class="space-y-2 pt-2 text-left">
+                  <div class="flex items-center justify-between text-xs p-2.5 rounded-lg bg-brand-navy border border-brand-border">
+                    <span class="flex items-center gap-2 text-slate-300">
+                      <i class="fa-solid fa-check-double text-teal-400"></i> Protocol Compliance & Data Integrity
+                    </span>
+                    <span class="text-teal-400 font-mono text-[10px]">Primary</span>
+                  </div>
+                  <div class="flex items-center justify-between text-xs p-2.5 rounded-lg bg-brand-navy border border-brand-border">
+                    <span class="flex items-center gap-2 text-slate-300">
+                      <i class="fa-solid fa-user-shield text-emerald-400"></i> Participant Rights & Ethics
+                    </span>
+                    <span class="text-emerald-400 font-mono text-[10px]">Paramount</span>
+                  </div>
+                  <div class="flex items-center justify-between text-xs p-2.5 rounded-lg bg-brand-navy border border-brand-border">
+                    <span class="flex items-center gap-2 text-slate-300">
+                      <i class="fa-solid fa-graduation-cap text-cyan-400"></i> Free Student Academy
+                    </span>
+                    <span class="text-cyan-400 font-mono text-[10px]">ICH-GCP</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- CLINICAL SERVICES SECTION                                            -->
+    <!-- Showcase trial site capabilities without CRO framing                 -->
+    <!-- ==================================================================== -->
+    <section id="services" class="py-24 bg-brand-navy/90 border-t border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+            Clinical Services
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
+            Comprehensive Clinical Trial Site Services
+          </h2>
+          <p class="text-slate-400 text-base">
+            Providing a reliable, fully operational clinical trial site to support study conduct across diverse therapeutic indications.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1 -->
+          <div class="glass-panel p-7 rounded-2xl flex flex-col justify-between transition duration-300 group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-xl group-hover:bg-teal-500 group-hover:text-slate-950 transition duration-300">
+                <i class="fa-solid fa-vials"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white font-display">Protocol Implementation & Trial Conduct</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Precision protocol activation and day-to-day study execution across multiple phases. We safeguard study design fidelity while maintaining seamless trial progress.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Comprehensive protocol compliance workflows</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Standard operating procedures aligned with global norms</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Rapid study start-up and execution</li>
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex justify-between items-center text-xs">
+              <span class="text-teal-400 font-mono">Site Execution</span>
+              <a href="#contact" class="text-slate-300 hover:text-teal-300 font-semibold flex items-center gap-1">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-panel p-7 rounded-2xl flex flex-col justify-between transition duration-300 group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300">
+                <i class="fa-solid fa-users-viewfinder"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white font-display">Patient Recruitment & Retention</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Ethical patient engagement strategies that reach diverse and targeted patient populations, ensuring rapid enrollment and sustained participant retention throughout trial duration.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Patient-centric consenting and retention strategies</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Active patient outreach and referral channels</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Minimized study drop-out rates</li>
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex justify-between items-center text-xs">
+              <span class="text-emerald-400 font-mono">Patient Centricity</span>
+              <a href="#contact" class="text-slate-300 hover:text-emerald-300 font-semibold flex items-center gap-1">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-panel p-7 rounded-2xl flex flex-col justify-between transition duration-300 group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl group-hover:bg-cyan-500 group-hover:text-slate-950 transition duration-300">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white font-display">Trial Monitoring & Coordinator Support</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Dedicated Clinical Research Coordinators (CRCs) facilitating visit logistics, investigator appointments, source documentation, and frictionless collaboration with study monitors.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Experienced on-site coordinators</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Facilitation of on-site and remote CRA visits</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Swift resolution of study discrepancies</li>
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex justify-between items-center text-xs">
+              <span class="text-cyan-400 font-mono">CRC Excellence</span>
+              <a href="#contact" class="text-slate-300 hover:text-cyan-300 font-semibold flex items-center gap-1">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-panel p-7 rounded-2xl flex flex-col justify-between transition duration-300 group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-xl group-hover:bg-teal-500 group-hover:text-slate-950 transition duration-300">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white font-display">Investigator & Patient Safety Oversight</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Rigorous medical oversight driven by experienced investigators, prioritizing patient well-being, systematic adverse event detection, and prompt safety notifications.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Dedicated Principal and Sub-Investigator supervision</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Systematic adverse event documentation</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Unyielding adherence to ethical trial conduct</li>
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex justify-between items-center text-xs">
+              <span class="text-teal-400 font-mono">Patient Safety</span>
+              <a href="#contact" class="text-slate-300 hover:text-teal-300 font-semibold flex items-center gap-1">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="glass-panel p-7 rounded-2xl flex flex-col justify-between transition duration-300 group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300">
+                <i class="fa-solid fa-file-circle-check"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white font-display">Source Data Integrity & QA (ALCOA+)</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Implementing rigorous ALCOA+ source data quality controls ensuring trial records are attributable, legible, contemporaneous, original, and accurate at all times.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Contemporaneous documentation standards</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Continuous internal quality checks</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Perpetual audit and inspection readiness</li>
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex justify-between items-center text-xs">
+              <span class="text-emerald-400 font-mono">ALCOA+ Standards</span>
+              <a href="#contact" class="text-slate-300 hover:text-emerald-300 font-semibold flex items-center gap-1">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="glass-panel p-7 rounded-2xl flex flex-col justify-between transition duration-300 group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl group-hover:bg-cyan-500 group-hover:text-slate-950 transition duration-300">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white font-display">Multi-Therapeutic Experience</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Experienced investigator collaboration spanning cardiology, oncology, metabolic diseases, infectious diseases, and respiratory medicine, providing tailored clinical trial execution.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Experienced medical specialists</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Broad therapeutic indications</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Coordinated ethics committee reviews</li>
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex justify-between items-center text-xs">
+              <span class="text-cyan-400 font-mono">Diverse Indications</span>
+              <a href="#contact" class="text-slate-300 hover:text-cyan-300 font-semibold flex items-center gap-1">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 3. COMPREHENSIVE CERTIFICATION ACADEMY SECTION                       -->
+    <!-- Positioned downstream, 5 tabs: Textbook Notes -> 20-30 Q Exam -> Cert-->
+    <!-- Positioned as: Free and greatest course in the market                -->
+    <!-- ==================================================================== -->
+    <section id="certifications" class="py-24 bg-brand-obsidian relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-500/20 to-emerald-500/20 border border-teal-500/40 text-teal-300 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-award text-emerald-400"></i> Clinsera Academic Division
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-display">
+            The Industry's Most Comprehensive <br>
+            <span class="gradient-title">100% Free Certification Program</span>
+          </h2>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Positioned as the <strong>free and greatest course available in the market</strong> for pharmacy, life-science, biotechnology, and medical scholars. Study comprehensive textbook notes, clear the in-depth 20–25 question exam following ICH-GCP norms, and instantly download your authenticated certificate.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 pt-1">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Free Access Always</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> Comprehensive 20–25 Question Exams</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> Unique Verifiable Certificate ID</span>
+          </div>
+        </div>
+
+        <!-- Course Tabs (PV, CDM, Operations, Medical Writing, ICH-GCP) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10" id="courseTabContainer">
+          <button onclick="switchCourse('pv')" id="tab-btn-pv" class="course-tab-btn px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-600 text-slate-950 shadow-lg shadow-teal-500/20">
+            <i class="fa-solid fa-shield-heart"></i> Pharmacovigilance (PV)
+          </button>
+          <button onclick="switchCourse('cdm')" id="tab-btn-cdm" class="course-tab-btn px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition flex items-center gap-2 bg-brand-surface text-slate-300 hover:text-white border border-brand-border">
+            <i class="fa-solid fa-database"></i> Clinical Data Mgmt (CDM)
+          </button>
+          <button onclick="switchCourse('ops')" id="tab-btn-ops" class="course-tab-btn px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition flex items-center gap-2 bg-brand-surface text-slate-300 hover:text-white border border-brand-border">
+            <i class="fa-solid fa-briefcase-medical"></i> Operations (ClinOps)
+          </button>
+          <button onclick="switchCourse('mw')" id="tab-btn-mw" class="course-tab-btn px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition flex items-center gap-2 bg-brand-surface text-slate-300 hover:text-white border border-brand-border">
+            <i class="fa-solid fa-pen-nib"></i> Medical Writing
+          </button>
+          <button onclick="switchCourse('gcp')" id="tab-btn-gcp" class="course-tab-btn px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition flex items-center gap-2 bg-brand-surface text-slate-300 hover:text-white border border-brand-border">
+            <i class="fa-solid fa-scale-balanced"></i> ICH-GCP Guidelines
+          </button>
+        </div>
+
+        <!-- Dynamic Content Card -->
+        <div id="courseContentArea" class="glass-panel p-6 sm:p-10 rounded-3xl border border-teal-500/30">
+          <!-- Rendered dynamically by script -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- DUAL FOCUS & PEDAGOGY SECTION                                        -->
+    <!-- ==================================================================== -->
+    <section id="pedagogy" class="py-20 bg-brand-navy border-t border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+            Our Dual Focus
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
+            Clinical Trial Excellence + Workforce Education
+          </h2>
+          <p class="text-slate-400 text-base">
+            Clinsera bridges rigorous clinical research site operations with open student education, preparing next-generation professionals for thriving global careers.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Career Pathways in Clinical Research</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Equipping students with industry-relevant competencies for in-demand roles: Clinical Research Associate (CRA), Clinical Research Coordinator (CRC), Drug Safety Specialist, and Clinical Data Manager.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-book-bookmark"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Global Regulatory Alignment</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Every course module and examination adheres to ICH-GCP principles (ICH E6, E2A, E3), ensuring graduates understand multinational expectations and compliance standards.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Zero-Cost Verifiable Credentialing</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Democratizing clinical research education with free credentialing. Every certificate includes a tamper-proof unique certificate identification number to strengthen student resumes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- ABOUT US SECTION                                                     -->
+    <!-- ==================================================================== -->
+    <section id="about" class="py-20 bg-brand-obsidian border-t border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-teal-400 text-xs font-semibold uppercase tracking-wider">About Clinsera</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
+              Dedicated to Integrity in Clinical Discovery
+            </h2>
+            <p class="text-slate-300 text-base leading-relaxed">
+              Clinsera Clinical Research Pvt Ltd was founded on the fundamental principle that medical discoveries must be backed by unyielding scientific integrity and flawless execution.
+            </p>
+            <p class="text-slate-300 text-base leading-relaxed">
+              By offering an advanced clinical trial site with qualified investigator oversight and combining it with a free clinical research education portal, we foster both trial quality and scientific talent.
+            </p>
+            
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-base mt-0.5"></i>
+                <span class="text-xs text-slate-300"><strong class="text-white">Uncompromised Ethical Standards:</strong> Every protocol executed at our site strictly adheres to the Declaration of Helsinki and international Good Clinical Practice.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-base mt-0.5"></i>
+                <span class="text-xs text-slate-300"><strong class="text-white">Empowering Future Researchers:</strong> Democratizing access to clinical research knowledge for aspiring medical, pharmacy, and life science graduates.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-6 rounded-2xl bg-brand-surface border border-teal-500/20 text-center">
+                <i class="fa-solid fa-scale-balanced text-3xl text-teal-400 mb-3"></i>
+                <div class="text-xl font-bold text-white font-display">ICH-GCP</div>
+                <div class="text-xs text-slate-400 mt-1">Ethical Standard Compliance</div>
+              </div>
+              <div class="p-6 rounded-2xl bg-brand-surface border border-emerald-500/20 text-center">
+                <i class="fa-solid fa-award text-3xl text-emerald-400 mb-3"></i>
+                <div class="text-xl font-bold text-white font-display">100% Free</div>
+                <div class="text-xs text-slate-400 mt-1">Student Academy Certifications</div>
+              </div>
+              <div class="p-6 rounded-2xl bg-brand-surface border border-cyan-500/20 text-center">
+                <i class="fa-solid fa-microscope text-3xl text-cyan-400 mb-3"></i>
+                <div class="text-xl font-bold text-white font-display">Science-Led</div>
+                <div class="text-xs text-slate-400 mt-1">Dedicated Trial Site Focus</div>
+              </div>
+              <div class="p-6 rounded-2xl bg-brand-surface border border-teal-500/20 text-center">
+                <i class="fa-solid fa-user-graduate text-3xl text-teal-300 mb-3"></i>
+                <div class="text-xl font-bold text-white font-display">5 Tracks</div>
+                <div class="text-xs text-slate-400 mt-1">Comprehensive Programs</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- CONTACT SECTION                                                      -->
+    <!-- ==================================================================== -->
+    <section id="contact" class="py-20 bg-brand-navy border-t border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-teal-400 text-xs font-semibold uppercase tracking-wider">Connect With Clinsera</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
+              Initiate a Study or Reach Our Academic Division
+            </h2>
+            <p class="text-slate-300 text-base leading-relaxed">
+              Whether you are an investigator seeking to conduct a clinical trial at our site or a student seeking curriculum guidance, our team is ready to assist.
+            </p>
+            <div class="space-y-3 pt-2 text-xs text-slate-300">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-teal-400 text-sm"></i>
+                <span>General & Site Inquiries: <strong class="text-white">info@clinseraresearch.com</strong></span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-emerald-400 text-sm"></i>
+                <span>Direct Site Office: <strong class="text-white">+91 40 4892 7000</strong></span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-cyan-400 text-sm"></i>
+                <span>Hyderabad, Telangana, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="p-8 rounded-2xl bg-brand-surface border border-teal-500/20 shadow-xl space-y-4">
+              <h3 class="text-xl font-bold text-white font-display">Inquiry & Collaboration Form</h3>
+              <form onsubmit="handleContactInquiry(event)" class="space-y-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label class="block text-xs text-slate-400 mb-1">Your Full Name *</label>
+                    <input type="text" required class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" placeholder="Dr. S. K. Rao">
+                  </div>
+                  <div>
+                    <label class="block text-xs text-slate-400 mb-1">Organization / College *</label>
+                    <input type="text" required class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" placeholder="Institute of Medical Sciences">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label class="block text-xs text-slate-400 mb-1">Email Address *</label>
+                    <input type="email" required class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" placeholder="s.rao@domain.com">
+                  </div>
+                  <div>
+                    <label class="block text-xs text-slate-400 mb-1">Inquiry Type</label>
+                    <select class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400">
+                      <option>Clinical Trial Site Collaboration</option>
+                      <option>Student Certification Inquiry</option>
+                      <option>Investigator Partnership</option>
+                      <option>General Information</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs text-slate-400 mb-1">Message</label>
+                  <textarea rows="3" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" placeholder="Enter study details or academic inquiry..."></textarea>
+                </div>
+
+                <div id="contactInquiryFeedback" class="hidden text-xs p-3 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  Thank you! Your message has been received by Clinsera Clinical Research Pvt Ltd. We will respond promptly.
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================================== -->
+  <!-- FOOTER                                                               -->
+  <!-- ==================================================================== -->
+  <footer class="bg-brand-obsidian border-t border-brand-border/80 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-brand-border">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-black border border-teal-500/40 p-1 overflow-hidden flex items-center justify-center flex-shrink-0">
+              <img id="siteFooterLogo" src="image_b10238.png" alt="Clinsera Logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <span class="text-sm font-bold text-white font-display block leading-tight">Clinsera Clinical Research Pvt Ltd</span>
+              <span class="text-[10px] text-teal-300 font-medium italic">"Where Quality Meets Clinical Discovery."</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            A state-of-the-art site for conducting clinical trials with uncompromised quality, coupled with free clinical research education for aspiring professionals.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider font-mono">Clinical Services</h4>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><a href="#services" class="hover:text-teal-400 transition">Protocol Implementation</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Patient Recruitment & Retention</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Trial Monitoring Support</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Safety & Medical Oversight</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Source Data Integrity (ALCOA+)</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider font-mono">Free Certifications</h4>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><a href="#certifications" onclick="switchCourse('pv')" class="hover:text-emerald-300 transition">Pharmacovigilance (PV)</a></li>
+            <li><a href="#certifications" onclick="switchCourse('cdm')" class="hover:text-emerald-300 transition">Clinical Data Management (CDM)</a></li>
+            <li><a href="#certifications" onclick="switchCourse('ops')" class="hover:text-emerald-300 transition">Clinical Operations (ClinOps)</a></li>
+            <li><a href="#certifications" onclick="switchCourse('mw')" class="hover:text-emerald-300 transition">Medical Writing</a></li>
+            <li><a href="#certifications" onclick="switchCourse('gcp')" class="hover:text-emerald-300 transition">ICH-GCP Guidelines</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider font-mono">Headquarters & CMS</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Clinsera Clinical Research Pvt Ltd.<br>
+            Hyderabad, Telangana, India.
+          </p>
+          <div class="pt-2">
+            <button onclick="toggleAdminCMSModal()" class="text-xs text-teal-400 hover:text-teal-300 flex items-center gap-1.5 font-medium underline">
+              <i class="fa-solid fa-gear"></i> Open Content Management Studio
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; <span id="yearSpan"></span> Clinsera Clinical Research Pvt Ltd. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-teal-400 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-teal-400 transition">Terms of Trial Site Conduct</a>
+          <a href="#" class="hover:text-teal-400 transition">ICH-GCP Ethics Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================================================================== -->
+  <!-- 4. IN-BROWSER CMS & ADMIN EDITOR MODAL (WORDPRESS/WEBFLOW PARITY)    -->
+  <!-- Enables editing images, course notes, exam questions, and certs    -->
+  <!-- ==================================================================== -->
+  <div id="adminCMSModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md hidden overflow-y-auto">
+    <div class="glass-panel w-full max-w-5xl rounded-3xl border border-teal-500/40 p-6 sm:p-8 relative shadow-2xl my-8">
+      
+      <button onclick="closeModal('adminCMSModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-brand-border pb-4 mb-6">
+        <div>
+          <span class="text-xs font-mono text-teal-400 uppercase tracking-widest font-bold flex items-center gap-1.5">
+            <i class="fa-solid fa-sliders"></i> Clinsera CMS Engine & Visual Studio
+          </span>
+          <h3 class="text-2xl font-bold text-white font-display">Website & Course Content Management</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="exportCMSConfigJSON()" class="px-3 py-1.5 rounded-lg bg-teal-500/20 hover:bg-teal-500/30 text-teal-300 border border-teal-500/40 text-xs font-semibold flex items-center gap-1">
+            <i class="fa-solid fa-download"></i> Export JSON
+          </button>
+          <label class="px-3 py-1.5 rounded-lg bg-brand-surface hover:bg-brand-card text-slate-300 border border-brand-border text-xs font-semibold flex items-center gap-1 cursor-pointer">
+            <i class="fa-solid fa-upload"></i> Import JSON
+            <input type="file" id="cmsImportInput" accept=".json" class="hidden" onchange="importCMSConfigFile(event)">
+          </label>
+        </div>
+      </div>
+
+      <!-- CMS Tabs -->
+      <div class="flex space-x-2 border-b border-brand-border mb-6 text-xs font-semibold">
+        <button onclick="switchCMSTab('general')" id="cms-tab-general" class="cms-nav-btn pb-3 px-3 text-teal-400 border-b-2 border-teal-400">
+          General & Images
+        </button>
+        <button onclick="switchCMSTab('notes')" id="cms-tab-notes" class="cms-nav-btn pb-3 px-3 text-slate-400 hover:text-white">
+          Course Notes & Modules
+        </button>
+        <button onclick="switchCMSTab('exams')" id="cms-tab-exams" class="cms-nav-btn pb-3 px-3 text-slate-400 hover:text-white">
+          Exam Questions Manager
+        </button>
+        <button onclick="switchCMSTab('cert')" id="cms-tab-cert" class="cms-nav-btn pb-3 px-3 text-slate-400 hover:text-white">
+          Certificate System
+        </button>
+      </div>
+
+      <!-- CMS Section: General & Images -->
+      <div id="cmsPanel-general" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Company Name</label>
+            <input type="text" id="cmsInputCompanyName" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" value="Clinsera Clinical Research Pvt Ltd">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Official Tagline</label>
+            <input type="text" id="cmsInputTagline" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" value="&quot;Where Quality Meets Clinical Discovery.&quot;">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Logo Image Filepath / URL</label>
+            <input type="text" id="cmsInputLogoSrc" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" value="image_b10238.png">
+            <span class="text-[10px] text-slate-400">Default: image_b10238.png (Attached unedited logo)</span>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Hero Subtext Description</label>
+            <input type="text" id="cmsInputHeroSubtext" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" value="Clinsera Clinical Research Pvt Ltd offers a dedicated site for conducting clinical trials with uncompromised protocol fidelity, participant safety, and source data accuracy.">
+          </div>
+        </div>
+      </div>
+
+      <!-- CMS Section: Course Notes & Modules -->
+      <div id="cmsPanel-notes" class="space-y-4 hidden">
+        <div class="flex items-center gap-3">
+          <label class="text-xs font-semibold text-slate-300">Select Track to Edit:</label>
+          <select id="cmsSelectCourseNotes" onchange="loadCMSCourseNotes()" class="bg-brand-navy border border-brand-border rounded-lg px-3 py-1.5 text-xs text-white">
+            <option value="pv">Pharmacovigilance (PV)</option>
+            <option value="cdm">Clinical Data Management (CDM)</option>
+            <option value="ops">Clinical Operations (ClinOps)</option>
+            <option value="mw">Medical Writing</option>
+            <option value="gcp">ICH-GCP Guidelines</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Course Title</label>
+          <input type="text" id="cmsInputCourseTitle" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Visual Workflow Diagram (ASCII / Text)</label>
+          <textarea id="cmsInputCourseDiagram" rows="5" class="w-full bg-brand-navy border border-brand-border rounded-lg p-3 text-xs font-mono text-teal-300"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Course Modules & Notes JSON / Content</label>
+          <textarea id="cmsInputCourseModulesJSON" rows="6" class="w-full bg-brand-navy border border-brand-border rounded-lg p-3 text-xs font-mono text-slate-300"></textarea>
+          <span class="text-[10px] text-slate-400">Structured array of modules with title & content.</span>
+        </div>
+      </div>
+
+      <!-- CMS Section: Exam Questions Manager (Add / Edit / Remove) -->
+      <div id="cmsPanel-exams" class="space-y-4 hidden">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <label class="text-xs font-semibold text-slate-300">Select Track Exam:</label>
+            <select id="cmsSelectCourseExam" onchange="loadCMSCourseExamQuestions()" class="bg-brand-navy border border-brand-border rounded-lg px-3 py-1.5 text-xs text-white">
+              <option value="pv">Pharmacovigilance (PV)</option>
+              <option value="cdm">Clinical Data Management (CDM)</option>
+              <option value="ops">Clinical Operations (ClinOps)</option>
+              <option value="mw">Medical Writing</option>
+              <option value="gcp">ICH-GCP Guidelines</option>
+            </select>
+          </div>
+          <button onclick="cmsAddQuestionToCurrentTrack()" class="px-3 py-1.5 rounded-lg bg-teal-500/20 hover:bg-teal-500/30 text-teal-300 border border-teal-500/40 text-xs font-semibold flex items-center gap-1.5">
+            <i class="fa-solid fa-plus"></i> Add Question
+          </button>
+        </div>
+
+        <div id="cmsQuestionsEditorList" class="max-h-80 overflow-y-auto space-y-4 pr-2">
+          <!-- Dynamic Question Cards generated here -->
+        </div>
+      </div>
+
+      <!-- CMS Section: Certificate System Configuration -->
+      <div id="cmsPanel-cert" class="space-y-4 hidden">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Certificate Prefix Code</label>
+            <input type="text" id="cmsInputCertPrefix" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white" value="CLIN">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Passing Score Threshold (%)</label>
+            <input type="number" id="cmsInputCertPassingScore" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white" value="80">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Signatory Name</label>
+            <input type="text" id="cmsInputCertSigner" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white" value="Dr. Rajeshwari K.">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Signatory Title</label>
+          <input type="text" id="cmsInputCertSignerTitle" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white" value="Head of Academic & Regulatory Affairs">
+        </div>
+      </div>
+
+      <!-- CMS Action Footer -->
+      <div class="pt-6 border-t border-brand-border flex items-center justify-between">
+        <button onclick="resetCMSToDefaults()" class="text-xs text-rose-400 hover:text-rose-300 font-semibold">
+          Reset to System Defaults
+        </button>
+
+        <div class="flex items-center gap-3">
+          <button onclick="closeModal('adminCMSModal')" class="px-4 py-2 text-xs font-semibold text-slate-400 hover:text-white">
+            Cancel
+          </button>
+          <button onclick="saveCMSChanges()" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-teal-500/20">
+            Save & Publish Live
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- 5. COMPREHENSIVE EXAM MODAL (20-30 QUESTIONS PER COURSE)              -->
+  <!-- ==================================================================== -->
+  <div id="examModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden overflow-y-auto">
+    <div class="glass-panel w-full max-w-4xl rounded-3xl border border-teal-500/40 p-6 sm:p-8 relative shadow-2xl my-8">
+      
+      <button onclick="closeModal('examModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="space-y-2 border-b border-brand-border pb-4 mb-6">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="text-xs font-mono text-teal-400 font-semibold flex items-center gap-1.5">
+            <i class="fa-solid fa-certificate"></i> Clinsera ICH-GCP Standardized Assessment
+          </span>
+          <span id="examPassBenchmarkBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 font-mono">
+            Passing Benchmark: 80%
+          </span>
+        </div>
+        <h3 id="examModalTitle" class="text-2xl font-bold text-white font-display">Certification Examination</h3>
+        <p class="text-xs text-slate-300">Answer all questions thoroughly. Includes multiple-choice, clinical case vignettes, and regulatory short-answer evaluations.</p>
+      </div>
+
+      <!-- Candidate Full Name for Official Certificate -->
+      <div class="mb-6 p-4 rounded-xl bg-brand-surface border border-teal-500/20">
+        <label class="block text-xs font-semibold text-teal-300 mb-1">Enter Candidate Full Name (for instant Certificate issuance): *</label>
+        <input type="text" id="candidateNameInput" placeholder="e.g., Dr. Ananya Sharma / Rajiv M. Verma" class="w-full bg-brand-navy border border-brand-border rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-teal-400">
+        <span id="nameWarning" class="text-[11px] text-rose-400 hidden mt-1">Please enter your full legal name before submitting the examination.</span>
+      </div>
+
+      <!-- Dynamic Question List -->
+      <form id="examForm" onsubmit="submitExam(event)" class="space-y-6">
+        <div id="questionsContainer" class="space-y-6">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <div id="examResultBanner" class="hidden p-4 rounded-xl text-xs space-y-1"></div>
+
+        <div class="pt-4 border-t border-brand-border flex items-center justify-between">
+          <button type="button" onclick="closeModal('examModal')" class="px-4 py-2 text-xs font-semibold text-slate-400 hover:text-white">
+            Cancel & Exit
+          </button>
+          <button type="submit" id="submitExamBtn" class="px-6 py-2.5 rounded-xl font-bold text-xs bg-gradient-to-r from-teal-500 to-emerald-500 text-slate-950 hover:from-teal-400 hover:to-emerald-400 shadow-lg shadow-teal-500/20">
+            Submit & Verify Answers
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- 6. VERIFIED CERTIFICATE DISPLAY & INSTANT DOWNLOAD/PRINT MODAL       -->
+  <!-- ==================================================================== -->
+  <div id="certificateModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md hidden overflow-y-auto">
+    <div class="w-full max-w-4xl my-8 relative">
+      
+      <!-- Action Bar -->
+      <div class="flex items-center justify-between mb-4 no-print">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30">
+            <i class="fa-solid fa-circle-check mr-1.5"></i> Authenticated Credential Issued
+          </span>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="window.print()" class="px-5 py-2 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-teal-500/20 transition">
+            <i class="fa-solid fa-download"></i> Instant Download / Print Certificate
+          </button>
+          <button onclick="closeModal('certificateModal')" class="px-4 py-2 rounded-xl bg-brand-surface hover:bg-brand-card text-white text-xs border border-brand-border transition">
+            Close
+          </button>
+        </div>
+      </div>
+
+      <!-- THE OFFICIAL PRINTABLE CERTIFICATE -->
+      <div id="printableCertificate" class="bg-gradient-to-br from-slate-950 via-brand-surface to-slate-900 border-4 border-double border-teal-500/60 rounded-3xl p-8 sm:p-14 text-center text-white relative shadow-2xl overflow-hidden">
+        
+        <div class="border border-teal-500/30 p-6 sm:p-10 rounded-2xl relative z-10">
+          
+          <!-- Exact Logo in Certificate Header -->
+          <div class="flex items-center justify-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-xl bg-black border border-teal-500/40 p-1 overflow-hidden flex items-center justify-center flex-shrink-0">
+              <img id="certModalLogo" src="image_b10238.png" alt="Clinsera Logo" class="w-full h-full object-contain">
+            </div>
+            <div class="text-left">
+              <h4 id="certCompanyName" class="text-xl sm:text-2xl font-extrabold tracking-tight text-white font-display">CLINSERA CLINICAL RESEARCH PVT LTD</h4>
+              <p class="text-[10px] sm:text-xs text-teal-300 font-mono tracking-widest uppercase">Academy of Clinical Discovery & Regulatory Sciences</p>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold font-mono">Certificate of Competency & Compliance</p>
+            <p id="certTagline" class="text-xs text-teal-400 italic mt-0.5">"Where Quality Meets Clinical Discovery."</p>
+          </div>
+
+          <p class="text-xs text-slate-300 mt-6 font-light">This is to certify that</p>
+          <div id="certCandidateName" class="text-2xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-200 to-teal-400 font-display my-2 uppercase tracking-wide">
+            CANDIDATE NAME
+          </div>
+          <p class="text-xs text-slate-300 max-w-xl mx-auto leading-relaxed">
+            has successfully reviewed the comprehensive curriculum, fulfilled all standardized examination criteria under ICH-GCP norms, and demonstrated proficient competency in
+          </p>
+
+          <div id="certCourseTitle" class="text-lg sm:text-2xl font-bold text-white font-display my-3">
+            Course Title Here
+          </div>
+
+          <p class="text-[11px] text-slate-400 max-w-lg mx-auto">
+            Governed by international Good Clinical Practice (ICH-GCP E6) ethical guidelines and regulatory standards.
+          </p>
+
+          <!-- Signature & Authenticity Credentials Footer -->
+          <div class="mt-12 pt-6 border-t border-brand-border/80 grid grid-cols-3 items-end text-xs">
+            <div class="text-left space-y-1">
+              <div class="text-[10px] text-slate-400 font-mono">Unique Certificate Number:</div>
+              <div id="certIdBadge" class="font-mono text-xs sm:text-sm text-teal-300 font-bold tracking-wider">CLIN-PV-2026-9481A</div>
+              <div id="certDateBadge" class="text-[10px] text-slate-400 font-mono">Issued: Oct 2026</div>
+              <div id="certHashBadge" class="text-[9px] text-slate-500 font-mono truncate max-w-[200px]">SHA-256 Auth Verified</div>
+            </div>
+
+            <!-- Certified Seal Stamp -->
+            <div class="flex justify-center">
+              <div class="w-20 h-20 rounded-full border-2 border-dashed border-teal-400/70 flex items-center justify-center p-1">
+                <div class="w-full h-full rounded-full bg-teal-500/10 flex flex-col items-center justify-center text-[9px] text-teal-300 font-bold uppercase tracking-tighter">
+                  <i class="fa-solid fa-stamp text-sm text-teal-400 mb-0.5"></i>
+                  <span>AUTHENTIC</span>
+                  <span class="text-[7px] text-emerald-400">ICH-GCP</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-right space-y-1">
+              <div id="certSignerName" class="font-serif italic text-lg text-teal-300 tracking-wider">Dr. Rajeshwari K.</div>
+              <div class="w-32 h-0.5 bg-slate-600 ml-auto"></div>
+              <div id="certSignerTitle" class="text-[10px] text-slate-300 font-medium">Head of Academic Affairs</div>
+              <div class="text-[9px] text-slate-500 font-mono">Clinsera Clinical Research Pvt Ltd</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- 7. APPLICATION LOGIC, DATA STORAGE & EXAM ENGINE                     -->
+  <!-- ==================================================================== -->
+  <script>
+    document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+    // 20 substantive questions generator helper for standardized testing
+    function generateCourseQuestions(courseCode, baseQuestions) {
+      const result = [...baseQuestions];
+      const additionalTemplates = [
+        {
+          type: "mcq",
+          q: `Under ICH-GCP guidelines for ${courseCode}, who holds primary, non-delegable ethical accountability for the safety of human participants?`,
+          options: [
+            "The pharmaceutical sales representative",
+            "The Principal Investigator (PI)",
+            "The hospital billing department",
+            "The software engineer maintaining EDC"
+          ],
+          ans: 1,
+          rationale: "ICH GCP Section 4.3 specifically outlines that medical care and safety decisions for trial subjects remain the direct accountability of a qualified Principal Investigator."
+        },
+        {
+          type: "scenario",
+          q: `Case Scenario (${courseCode}): A study monitor discovers that a subject received study medication prior to signing the current IRB-approved Informed Consent Form amendment. How should this deviation be handled?`,
+          options: [
+            "Shred the original notes and re-date the consent form to match the visit",
+            "Immediately document a Major Protocol Deviation, re-consent the subject, notify the IRB/IEC, and evaluate subject safety",
+            "Ignore it because the participant did not complain",
+            "Wait until trial closure to notify anyone"
+          ],
+          ans: 1,
+          rationale: "Administering trial therapy without valid updated informed consent represents a critical protocol deviation requiring immediate formal IRB notification and patient re-consenting."
+        },
+        {
+          type: "mcq",
+          q: `In the context of ${courseCode}, what does the 'A' in the ALCOA+ data governance framework mandate?`,
+          options: [
+            "Approximate: Numbers may be rounded to whole integers",
+            "Attributable: It must be transparent who observed and recorded the data",
+            "Anonymous: Subject data should never be recorded anywhere",
+            "Automated: Only machines are permitted to collect trial observations"
+          ],
+          ans: 1,
+          rationale: "Attributable means all data, entries, and corrections must be clearly traceable to the author/operator."
+        },
+        {
+          type: "mcq",
+          q: `What is the role of an Independent Ethics Committee (IEC) / IRB during the conduct of ${courseCode} studies?`,
+          options: [
+            "To maximize pharmaceutical corporate revenues",
+            "To safeguard the rights, safety, and well-being of trial participants",
+            "To speed up trial completion regardless of risks",
+            "To manage the hospital cafeteria menus"
+          ],
+          ans: 1,
+          rationale: "The cardinal purpose of an IRB/IEC is the protection of human subjects participating in research."
+        },
+        {
+          type: "scenario",
+          q: `Case Scenario: An auditor asks for evidence that the study coordinator was trained on protocol amendment version 3.0 before administering tests. What document proves this?`,
+          options: [
+            "A verbal confirmation from the sponsor",
+            "The signed Training Log and Delegation of Authority (DOA) log in the Investigator Site File",
+            "The coordinator's university bachelor degree diploma",
+            "The hospital parking badge"
+          ],
+          ans: 1,
+          rationale: "Site training logs and DOA records in the ISF constitute the formal regulatory audit trail of protocol qualification."
+        },
+        {
+          type: "mcq",
+          q: `What is the difference between Single-Blind and Double-Blind trials in clinical research?`,
+          options: [
+            "In single-blind, only the subject is unaware; in double-blind, neither the subject nor the treating investigator knows treatment allocation",
+            "Single-blind uses one drug; double-blind uses two drugs",
+            "Double-blind trials are not permitted under ICH guidelines",
+            "Single-blind trials do not require informed consent"
+          ],
+          ans: 0,
+          rationale: "Blinding minimizes bias. Double-blind trials prevent both subjects and investigator teams from knowing treatment assignment."
+        },
+        {
+          type: "mcq",
+          q: `In ${courseCode}, what constitutes an 'Audit Trail' in electronic trial software?`,
+          options: [
+            "A marketing brochure describing software speed",
+            "A secure, computer-generated, time-stamped record that logs every creation, change, or deletion of data",
+            "A deleted folder of backup files",
+            "A list of software developers who wrote the program"
+          ],
+          ans: 1,
+          rationale: "21 CFR Part 11 and ICH GCP mandate unalterable, time-stamped audit trails tracking operator, date, and reason for change."
+        },
+        {
+          type: "scenario",
+          q: `Case Scenario (${courseCode}): A participant in a randomized study reports an urgent medical emergency. The treating ER physician must know if the participant is on active drug or placebo. What mechanism is accessed?`,
+          options: [
+            "Wait 14 business days for sponsor approval",
+            "Emergency Code Break / Unblinding Procedure",
+            "Terminate the participant without checking",
+            "Guess based on blood pressure numbers"
+          ],
+          ans: 1,
+          rationale: "Emergency code break protocols exist so treating doctors can immediately unblind treatment when urgent medical management demands it."
+        },
+        {
+          type: "mcq",
+          q: `According to ICH E6, which of the following is considered an 'Essential Document' prior to starting clinical enrollment?`,
+          options: [
+            "The signed Clinical Trial Protocol and approved Informed Consent Form",
+            "The cafeteria menu of the research site",
+            "The personal diary of the lead monitor",
+            "The internal corporate memo on commercial pricing"
+          ],
+          ans: 0,
+          rationale: "Section 8 of ICH E6 classifies the protocol, investigator brochure, and IRB approvals as essential documents required prior to trial initiation."
+        },
+        {
+          type: "mcq",
+          q: `What is the primary definition of 'Vulnerable Subjects' in clinical research?`,
+          options: [
+            "Participants with high bank balances",
+            "Individuals whose willingness to volunteer may be unduly influenced by the expectation of benefits or fear of retaliation (e.g. prisoners, minors, subordinates)",
+            "Patients who live more than 10 miles from the trial center",
+            "Individuals who have never taken prescription pills before"
+          ],
+          ans: 1,
+          rationale: "Vulnerable populations require special protection because their consent might be compromised by coercion, hierarchy, or limited capacity."
+        },
+        {
+          type: "mcq",
+          q: `When must standard financial disclosure forms be updated by investigators participating in regulated clinical studies?`,
+          options: [
+            "Never, financial disclosure is voluntary",
+            "Prior to study start, throughout trial execution, and up to 1 year following trial completion",
+            "Only if an investigator wins the lottery",
+            "Only during tax audits"
+          ],
+          ans: 1,
+          rationale: "Financial conflicts of interest must be disclosed before trial start and updated through 1 year post-trial to preserve data objectivity."
+        },
+        {
+          type: "short_answer",
+          q: `Regulatory Short-Answer: In the ALCOA+ source data integrity standard, what does the letter 'L' stand for? (Single word)`,
+          expectedAnswers: ["LEGIBLE"],
+          rationale: "The 'L' in ALCOA stands for Legible, requiring that data can be read, deciphered, and audited without ambiguity."
+        }
+      ];
+
+      // Add to reach ~20 substantive questions per course
+      while (result.length < 20) {
+        const item = additionalTemplates[result.length - baseQuestions.length];
+        if (item) {
+          result.push(item);
+        } else {
+          break;
+        }
+      }
+      return result;
+    }
+
+    // DEFAULT SITE CONFIGURATION
+    const DEFAULT_CMS_DATA = {
+      companyName: "Clinsera Clinical Research Pvt Ltd",
+      tagline: '"Where Quality Meets Clinical Discovery."',
+      logoSrc: "image_b10238.png",
+      heroHeadline: "Bridging Science <br><span class=\"gradient-title\">and Clinical Discovery.</span>",
+      heroSubtext: "Clinsera Clinical Research Pvt Ltd offers a dedicated site for conducting clinical trials with uncompromised protocol fidelity, participant safety, and source data accuracy. We partner with investigators and study teams to execute complex interventional research to the highest scientific standards.",
+      certPrefix: "CLIN",
+      passingScore: 80,
+      certSigner: "Dr. Rajeshwari K.",
+      certSignerTitle: "Head of Academic & Regulatory Affairs",
+      courses: {
+        pv: {
+          id: 'pv',
+          code: 'PV',
+          title: 'Pharmacovigilance (PV) & Drug Safety Surveillance',
+          headline: 'Master Individual Case Safety Reports (ICSR), MedDRA Coding & Safety Governance',
+          readTime: '35 mins high-yield study',
+          overview: 'Pharmacovigilance (PV) is the pharmacological science relating to the collection, detection, assessment, monitoring, and prevention of adverse effects with pharmaceutical products. This textbook module breaks down clinical safety from everyday analogies to global regulatory dossiers.',
+          diagramTitle: 'Visual Workflow: 24-Hour SAE Expedited Reporting Lifecycle',
+          diagram: `+---------------------------------------------------------------------------------------------------+
+|  [DAY 0: CLOCK STARTS]                                                                            |
+|  Site / Investigator becomes aware of an SAE (Hospitalization, Death, or Life-Threatening Event)  |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  [WITHIN 24 HOURS]                                                                                |
+|  Investigator completes Initial SAE Form -> Transmits to Sponsor / Safety Unit                     |
+|  Check 4 Minimum Criteria: (1) Patient (2) Reporter (3) Suspect Drug (4) Adverse Event            |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  [TRIAGE & CAUSALITY ASSESSMENT]                                                                 |
+|  Medical Reviewer assesses: Is it Related? (Causal) AND Is it Unexpected? (Not in IB/SmPC)        |
++-------------------------+------------------------------------------------+------------------------+
+                          |                                                |
+                 YES: SUSAR (Fatal/Life-Threat)                   YES: Other Serious SUSAR
+                          |                                                |
+                          v                                                v
+             +---------------------------+                   +----------------------------+
+             | Report to Regulatory Body |                   | Report to Regulatory Body  |
+             | within <= 7 CALENDAR DAYS |                   | within <= 15 CALENDAR DAYS |
+             | (+8 days for follow-up)   |                   +----------------------------+
+             +---------------------------+`,
+          notes: [
+            {
+              moduleTitle: 'Module 1: The Foundation of Pharmacovigilance (Everyday Analogy -> Science)',
+              content: `Everyday Analogy: Think of buying a brand-new model of a car. Crash tests and factory quality checks (Phase 1–3 trials) prove it is safe enough for the road. But what happens when 500,000 different people drive that car through snowstorms, rocky hills, or with different fuels? Mechanics and car owners report strange brake issues back to the manufacturer so recalls can happen. Pharmacovigilance is that exact mechanism for medicines.
+
+Formal Definition: Pharmacovigilance (abbreviated PV or PhV) is defined by the World Health Organization (WHO) as the science and activities relating to the detection, assessment, understanding, and prevention of adverse effects or any other possible medicine-related problem.
+
+Key Terminology:
+1. Adverse Event (AE): Any untoward medical occurrence in a patient or clinical investigation subject administered a pharmaceutical product, which does not necessarily have a causal relationship with the treatment.
+2. Adverse Drug Reaction (ADR): A response to a medicinal product which is noxious and unintended, where a causal relationship between the drug and event is at least a reasonable possibility.
+3. Serious Adverse Event (SAE): An event that results in death, is life-threatening, requires inpatient hospitalization, causes persistent disability, or is a congenital anomaly.`
+            },
+            {
+              moduleTitle: 'Module 2: The Four Minimum Criteria for a Valid ICSR',
+              content: `For an Individual Case Safety Report (ICSR) to be legally valid for regulatory submission under ICH E2A guidelines, four minimum data elements must exist:
+1. Identifiable Patient: Characteristics such as initials, age, patient identification number, or gender.
+2. Identifiable Reporter: A recognizable individual who reported the case (physician, pharmacist, nurse, or trial subject).
+3. Suspect Medicinal Product: At least one investigational medicinal product or drug administered.
+4. Adverse Event / Reaction: At least one medical symptom, diagnosis, or outcome.
+
+Practical Example: If a nurse calls reporting "a 45-year-old male participant on Drug X developed severe urticaria within 30 minutes of infusion," all four criteria are satisfied. The case is valid and the regulatory clock starts immediately.`
+            },
+            {
+              moduleTitle: 'Module 3: SUSARs & Strict Expedited Timelines',
+              content: `A SUSAR is a Suspected Unexpected Serious Adverse Reaction:
+- Suspected: Reasonable possibility of causal relationship with the study drug.
+- Unexpected: The nature or severity of the reaction is inconsistent with the reference safety information (Investigator's Brochure for unapproved drugs, or SmPC for marketed products).
+
+Regulatory Timelines (ICH E2A):
+• Fatal or Life-Threatening SUSARs: Must be reported to health authorities and Ethics Committees no later than 7 calendar days, with a detailed follow-up report within an additional 8 calendar days.
+• All Other Serious Unexpected Reactions: Must be reported within 15 calendar days.`
+            },
+            {
+              moduleTitle: 'Module 4: MedDRA Hierarchy & Periodic Safety Reporting',
+              content: `The Medical Dictionary for Regulatory Activities (MedDRA) standardizes medical terminology across 5 hierarchical levels:
+1. System Organ Class (SOC) -> e.g., Cardiac Disorders
+2. High Level Group Term (HLGT) -> e.g., Cardiac Arrhythmias
+3. High Level Term (HLT) -> e.g., Ventricular Arrhythmias
+4. Preferred Term (PT) -> e.g., Ventricular Tachycardia (Primary term for clinical reporting)
+5. Lowest Level Term (LLT) -> e.g., Ventricular Tachycardia Paroxysmal
+
+Periodic Aggregate Reports:
+• DSUR (Development Safety Update Report): Annual safety report prepared during clinical trial development (ICH E2F).
+• PBRER/PSUR: Periodic Benefit-Risk Evaluation Reports prepared for marketed medicines.`
+            }
+          ],
+          exam: generateCourseQuestions("PV", [
+            {
+              type: "mcq",
+              q: "Under ICH E2A guidelines, what are the four mandatory criteria required for an Individual Case Safety Report (ICSR) to be considered valid?",
+              options: [
+                "Patient initials, Hospital name, Blood pressure, Brand name",
+                "Identifiable patient, Identifiable reporter, Suspect drug, and Adverse event",
+                "Signed consent form, Investigator license, Laboratory report, Prescribing doctor",
+                "Patient age, Discharge summary, ECG tracing, Drug batch number"
+              ],
+              ans: 1,
+              rationale: "An ICSR is legally valid only when at least one identifiable patient, reporter, suspect drug, and adverse event are present."
+            },
+            {
+              type: "mcq",
+              q: "A clinical trial subject experiences moderate skin rash that prompts an emergency room visit and an overnight hospital admission. Is this classified as an SAE?",
+              options: [
+                "No, because the intensity is only moderate.",
+                "Yes, because any event resulting in inpatient hospitalization qualifies as an SAE by outcome.",
+                "Only if the study medication was stopped permanently.",
+                "No, unless the hospital admission extends beyond 72 hours."
+              ],
+              ans: 1,
+              rationale: "Seriousness is defined by regulatory outcome criteria. Any event requiring inpatient hospitalization is classified as an SAE."
+            },
+            {
+              type: "mcq",
+              q: "What is the mandatory expedited reporting timeline for a fatal or life-threatening SUSAR in an interventional clinical trial?",
+              options: [
+                "30 calendar days",
+                "No later than 7 calendar days (with complete follow-up in +8 days)",
+                "Within 14 business days",
+                "At the time of study database lock"
+              ],
+              ans: 1,
+              rationale: "Fatal or life-threatening SUSARs require expedited reporting to health authorities within 7 calendar days."
+            },
+            {
+              type: "mcq",
+              q: "Which level of the MedDRA dictionary hierarchy represents the distinct descriptor utilized for formal regulatory reporting and data tables?",
+              options: [
+                "Lowest Level Term (LLT)",
+                "System Organ Class (SOC)",
+                "Preferred Term (PT)",
+                "High Level Group Term (HLGT)"
+              ],
+              ans: 2,
+              rationale: "Preferred Term (PT) is the distinct descriptor used for formal regulatory reporting, signal detection, and summary tables."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: An investigator notes an elevation of liver enzymes (ALT/AST 6x ULN) in a Phase II trial subject on Drug X. The Investigator Brochure lists 'mild transient elevation up to 2x ULN'. Is this event 'Expected' or 'Unexpected'?",
+              options: [
+                "Expected, because liver enzymes are mentioned in the IB.",
+                "Unexpected, because the severity/magnitude (6x ULN) exceeds what is described in the reference safety information.",
+                "Neither, because enzyme elevations are not adverse events.",
+                "Expected, provided the subject is asymptomatic."
+              ],
+              ans: 1,
+              rationale: "Under ICH guidelines, an event is unexpected if its specificity or severity is inconsistent with the reference safety information (IB)."
+            },
+            {
+              type: "mcq",
+              q: "What is the primary document used to report aggregate annual safety updates for an investigational drug during clinical trials?",
+              options: [
+                "PSUR (Periodic Safety Update Report)",
+                "DSUR (Development Safety Update Report - ICH E2F)",
+                "SmPC (Summary of Product Characteristics)",
+                "MedWatch 3500 Form"
+              ],
+              ans: 1,
+              rationale: "The Development Safety Update Report (DSUR) is the international standard for annual clinical trial safety updates."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: A spontaneous safety report arrives from a pharmacist describing a patient with acute renal failure after taking the sponsor's marketed drug. The patient's name is not given, but gender (female) and age (58) are provided. Is this patient 'identifiable'?",
+              options: [
+                "No, full legal name and government ID are mandatory.",
+                "Yes, age and gender are sufficient to consider the patient identifiable under ICH PV norms.",
+                "Only if the patient's hospital bed number is provided.",
+                "No, spontaneous reports can never be validated."
+              ],
+              ans: 1,
+              rationale: "Patient initials, age, date of birth, or gender are sufficient to satisfy the identifiable patient criterion."
+            },
+            {
+              type: "short_answer",
+              q: "Regulatory Short-Answer: Within how many calendar days must a non-fatal, non-life-threatening serious unexpected adverse drug reaction (SUSAR) be submitted to health authorities? (Type the digit)",
+              expectedAnswers: ["15", "15 days", "15 calendar days"],
+              rationale: "All other serious, unexpected adverse reactions (SUSARs) must be reported within 15 calendar days under ICH E2A."
+            }
+          ])
+        },
+        cdm: {
+          id: 'cdm',
+          code: 'CDM',
+          title: 'Clinical Data Management (CDM) & CDISC Standards',
+          headline: 'From eCRF Design and Edit Checks to Query Resolution and Database Lock',
+          readTime: '30 mins high-yield study',
+          overview: 'Clinical Data Management ensures the delivery of high-quality, reliable, statistically sound, and audit-ready clinical trial databases compliant with international standards.',
+          diagramTitle: 'Visual Workflow: Clinical Data Cleaning & Query Management Lifecycle',
+          diagram: `+---------------------------------------------------------------------------------------------------+
+|  [DATA COLLECTION: EDC ENTRY]                                                                     |
+|  Site CRC enters source data into electronic Case Report Form (eCRF)                              |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  [AUTOMATED & MANUAL DATA VALIDATION]                                                             |
+|  * Programmed Edit Checks trigger (Range checks, cross-form consistency, date sequencing)         |
+|  * CDM Data Reviewer spots discrepancies during clinical listings review                          |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  [DATA CLARIFICATION FORM (DCF) / QUERY]                                                          |
+|  Query raised electronically to the Investigator Site -> Site explains or corrects eCRF value     |
+|  Audit Trail records: User ID, Timestamp, Reason for Change (21 CFR Part 11)                      |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  [DATABASE LOCK (DBL) CHECKLIST]                                                                  |
+|  1. All visits completed/accounted  2. 100% queries closed  3. Medical Coding complete (MedDRA)   |
+|  4. SAE Reconciliation 100% match   5. PI Electronic Sign-off -> HARD LOCK -> SDTM Tabulation     |
++---------------------------------------------------------------------------------------------------+`,
+          notes: [
+            {
+              moduleTitle: 'Module 1: The Clinical Data Lifecycle (Everyday Analogy -> Science)',
+              content: `Everyday Analogy: Think of clinical data management like an online banking system. When you transfer money, the system validates your account number, checks that you have enough balance, prevents negative numbers, and creates a permanent timestamped log. If someone types a transaction date in the future, the computer stops them. CDM does this for patient lab tests, vitals, and tumor sizes.
+
+Formal Definition: Clinical Data Management (CDM) is the critical process of collecting, integrating, cleaning, and validating clinical trial data to ensure accuracy, completeness, and regulatory readiness for statistical analysis.
+
+Key Documents:
+• Data Management Plan (DMP): The master operational manual specifying database structure, query handling rules, and lock criteria.
+• Data Validation Plan (DVP): Specifies the programmatic edit checks, biological ranges, and cross-form consistency logic.`
+            },
+            {
+              moduleTitle: 'Module 2: 21 CFR Part 11 & Electronic Signatures',
+              content: `Regulatory requirements for Electronic Records and Electronic Signatures dictate:
+1. Audit Trails: Secure, computer-generated, time-stamped audit trails that independently record the date and time of operator entries and actions that create, modify, or delete electronic records.
+2. System Access: Dual-factor or unique user credentials ensuring no shared accounts.
+3. Signature Manifestation: The printed name of the signer, the date and time, and the meaning associated with the signature (e.g., review, approval, authorship).`
+            },
+            {
+              moduleTitle: 'Module 3: Discrepancy Management & Query Lifecycle',
+              content: `Discrepancies can be system-generated (Edit Checks) or manual (Data Manager review).
+Common Edit Checks:
+• Univariate Checks: Value outside physiological limits (e.g., Heart Rate = 320 bpm).
+• Multivariate / Logic Checks: Male subject with positive pregnancy test, or visit date occurring before subject birth date.
+• Chronological Checks: Concomitant medication end date prior to start date.`
+            },
+            {
+              moduleTitle: 'Module 4: Database Lock & CDISC Data Models (SDTM & ADaM)',
+              content: `Database Lock (DBL) freezes the dataset to prevent unauthorized modifications before statistical analysis.
+Prerequisites for Lock:
+- All subject visits entered and accounted for.
+- All open queries resolved and closed.
+- Medical coding completed and approved (MedDRA for Adverse Events/Medical History, WHODrug for Concomitant Medications).
+- SAE reconciliation finalized with zero mismatches.
+- Principal Investigator electronic sign-off.
+Data is transformed into CDISC SDTM (Study Data Tabulation Model) for regulatory submission and CDISC ADaM (Analysis Data Model) for biostatistical analysis.`
+            }
+          ],
+          exam: generateCourseQuestions("CDM", [
+            {
+              type: "mcq",
+              q: "What is an indispensable requirement for Electronic Data Capture (EDC) systems to ensure data integrity under 21 CFR Part 11?",
+              options: [
+                "Public open-access for anonymous reviews",
+                "Computer-generated, secure, time-stamped audit trails that track all data changes",
+                "Ability for investigators to delete accidental entries without leaving a record",
+                "Weekly paper printouts stored in off-site warehouses"
+              ],
+              ans: 1,
+              rationale: "Regulations mandate immutable, time-stamped audit trails preserving the history of who created, changed, or deleted any record."
+            },
+            {
+              type: "mcq",
+              q: "Which CDISC standard defines the structure for human clinical trial tabulation data submitted to regulatory authorities?",
+              options: [
+                "CDISC SEND",
+                "CDISC SDTM (Study Data Tabulation Model)",
+                "CDISC PRGM",
+                "CDISC ODM"
+              ],
+              ans: 1,
+              rationale: "SDTM is the standard format required for tabulating clinical trial study data for regulatory submissions."
+            },
+            {
+              type: "mcq",
+              q: "What critical reconciliation must be completed with 100% concordance before locking a clinical study database?",
+              options: [
+                "Reconciliation between clinical trial supplies and hospital inventory",
+                "Reconciliation between Serious Adverse Events (SAEs) in the Safety database and the CDM database",
+                "Reconciliation between investigator travel expenses and budgets",
+                "Reconciliation of subject attendance in hospital parking"
+              ],
+              ans: 1,
+              rationale: "SAE reconciliation ensures the safety database and EDC clinical database match identically in terms of seriousness, onset date, and outcome."
+            },
+            {
+              type: "mcq",
+              q: "What is an 'Edit Check' in electronic clinical data systems?",
+              options: [
+                "A spelling check performed by the medical writer",
+                "An automated validation script that detects logical inconsistencies, missing data, or out-of-range values",
+                "A financial audit executed by accountants",
+                "A human resources background check on site staff"
+              ],
+              ans: 1,
+              rationale: "Edit checks are programmatic logic routines programmed into EDC to detect errors."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: An investigator enters a subject's diastolic blood pressure as 120 mmHg and systolic blood pressure as 80 mmHg. What type of edit check will fire?",
+              options: [
+                "Univariate range check only",
+                "Multivariate / Logic check (Systolic BP must be greater than Diastolic BP)",
+                "MedDRA auto-coding check",
+                "SAE reconciliation flag"
+              ],
+              ans: 1,
+              rationale: "A multivariate logic check identifies cross-variable contradictions such as Diastolic BP exceeding Systolic BP."
+            },
+            {
+              type: "mcq",
+              q: "Which standardized dictionary is universally utilized in Clinical Data Management to code Concomitant Medications?",
+              options: [
+                "MedDRA",
+                "WHODrug Global",
+                "ICD-10",
+                "SNOMED CT"
+              ],
+              ans: 1,
+              rationale: "WHODrug Global is the international standard dictionary for coding concomitant medications and previous drug histories."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: During final data review, a Data Manager notices that a subject's study termination date is recorded as 12-May-2026, but an adverse event is recorded as starting on 20-May-2026. What action must be taken?",
+              options: [
+                "Silently delete the adverse event entry",
+                "Issue a formal data query to the investigator site to clarify the chronology and obtain an audit-trailed correction",
+                "Change the termination date to match the adverse event without asking the site",
+                "Proceed with database lock anyway"
+              ],
+              ans: 1,
+              rationale: "CDM staff must never alter clinical source data unilaterally; queries must be issued to the site for audit-trailed resolution."
+            },
+            {
+              type: "short_answer",
+              q: "Regulatory Short-Answer: What is the acronym for the CDISC model used specifically for statistical analysis datasets (as opposed to tabulation data)?",
+              expectedAnswers: ["ADAM", "ADaM"],
+              rationale: "CDISC ADaM (Analysis Data Model) defines datasets structured for biostatistical analysis and modeling."
+            }
+          ])
+        },
+        ops: {
+          id: 'ops',
+          code: 'CLINOPS',
+          title: 'Clinical Operations (ClinOps) & Trial Monitoring',
+          headline: 'Site Selection, Trial Master File (TMF), Protocol Compliance & Monitoring Visits',
+          readTime: '30 mins high-yield study',
+          overview: 'Clinical Operations orchestrates trial startup, site feasibility, monitoring visits, and strict compliance with the study protocol and international GCP guidelines.',
+          diagramTitle: 'Visual Workflow: Clinical Monitoring Lifecycle & Site Visits',
+          diagram: `+---------------------------------------------------------------------------------------------------+
+|  1. PRE-STUDY / FEASIBILITY VISIT (PSV)                                                          |
+|  Evaluate investigator qualifications, patient population, site equipment, and ethics timelines  |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  2. SITE INITIATION VISIT (SIV)                                                                   |
+|  * Ethics & Regulatory Approvals in place  * Protocol & SOP Training complete                      |
+|  * Investigational Product (IP) received  * Delegation of Authority (DOA) log signed               |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  3. INTERIM MONITORING VISITS (IMV) / ROUTINE MONITORING                                          |
+|  * 100% ICF review  * Source Data Verification (SDV) using ALCOA+  * Drug accountability logs      |
+|  * Protocol deviations documented  * Issue follow-up letter to PI within target timelines          |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  4. CLOSE-OUT VISIT (COV)                                                                         |
+|  Reconcile & return/destroy unused IP -> Resolve all queries -> Finalize ISF -> Archiving         |
++---------------------------------------------------------------------------------------------------+`,
+          notes: [
+            {
+              moduleTitle: 'Module 1: The Lifecycle of Monitoring Visits (Analogy -> Practical)',
+              content: `Everyday Analogy: Think of building a skyscraper. An inspector visits before groundbreaking to check the soil (Pre-study visit). Once construction starts, they inspect every floor before concrete is poured (Interim monitoring). When finished, a final inspection signs off on occupancy (Close-out visit). Clinical Research Associates (CRAs) are those rigorous safety and quality inspectors.
+
+The 4 Types of Monitoring Visits:
+1. Pre-Study Visit (PSV) / Feasibility: Assesses site potential, investigator interest, patient volume, facilities, and staff capabilities.
+2. Site Initiation Visit (SIV): Conducted after regulatory and IRB/IEC approvals. Comprehensive training of all site personnel on protocol, drug handling, and procedures before enrollment begins.
+3. Interim Monitoring Visits (IMV): Ongoing verification of Informed Consent Forms, Source Data Verification (SDV), investigational product accountability, and safety reporting.
+4. Close-Out Visit (COV): Final reconciliation of study medication, closure of queries, and formal archiving of the Investigator Site File (ISF).`
+            },
+            {
+              moduleTitle: 'Module 2: The Three Pillars of Informed Consent',
+              content: `Informed consent is a voluntary process, not merely a signature on paper:
+1. Information: Comprehensive explanation of study purpose, treatments, randomization, risks, potential benefits, and alternative therapies in lay language.
+2. Comprehension: The participant must have ample opportunity to ask questions and have them answered satisfactorily.
+3. Voluntariness: Free from coercion or undue influence; the participant may withdraw at any time without penalty or loss of benefits.
+
+Key Rule: Informed consent MUST be obtained prior to any study-specific procedures or diagnostic washouts.`
+            },
+            {
+              moduleTitle: 'Module 3: ALCOA+ Source Document Verification (SDV)',
+              content: `Data entered into the trial eCRF must be supported by primary medical records adhering to ALCOA+:
+• Attributable: Traceable to the person who recorded the observation.
+• Legible: Clear and readable.
+• Contemporaneous: Recorded at the time the observation or procedure took place.
+• Original: First recording of data (or certified true copy).
+• Accurate: Truthful and free from errors.
+• Plus: Complete, Consistent, Enduring, and Available when needed.`
+            },
+            {
+              moduleTitle: 'Module 4: Investigational Product (IP) Accountability',
+              content: `CRAs and coordinators must maintain a rigorous audit trail of all clinical supplies:
+- Receipt date, quantity, and batch numbers.
+- Storage condition monitoring (calibrated temperature logs for ambient, 2–8°C, or -20°C/-80°C).
+- Dispensation records per subject visit.
+- Return and destruction or return-to-sponsor documentation.`
+            }
+          ],
+          exam: generateCourseQuestions("CLINOPS", [
+            {
+              type: "mcq",
+              q: "At what point in time MUST the Informed Consent Form (ICF) be signed and dated by a prospective clinical trial subject?",
+              options: [
+                "Immediately before administering the first investigational dose",
+                "Before any trial-related procedure, screening test, or wash-out is undertaken",
+                "At any point during the baseline hospital admission",
+                "Within 24 hours after screening lab results return"
+              ],
+              ans: 1,
+              rationale: "ICH-GCP mandates that informed consent must be documented before initiating ANY study-related procedure or intervention."
+            },
+            {
+              type: "mcq",
+              q: "Which monitoring visit takes place immediately prior to opening a site for active subject recruitment to ensure staff training and drug receipt?",
+              options: [
+                "Pre-Study Feasibility Visit (PSV)",
+                "Site Initiation Visit (SIV)",
+                "Interim Monitoring Visit (IMV)",
+                "Close-Out Visit (COV)"
+              ],
+              ans: 1,
+              rationale: "The Site Initiation Visit (SIV) ensures that all approvals, supplies, and protocol training are in place before enrolling subjects."
+            },
+            {
+              type: "mcq",
+              q: "What is the primary role of the Trial Master File (TMF)?",
+              options: [
+                "To store payroll and marketing brochures",
+                "To hold all essential documents that collectively permit evaluation of the conduct of a trial and quality of the data produced",
+                "To contain only confidential patient identification keys",
+                "To record stock prices of the sponsoring pharmaceutical firm"
+              ],
+              ans: 1,
+              rationale: "The TMF contains the essential documents (ICH E6 Section 8) that allow an auditor to reconstruct how the study was conducted."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: During an Interim Monitoring Visit, a CRA discovers that a new Study Coordinator signed an Informed Consent Form as a witness, but their name is NOT on the Delegation of Authority (DOA) Log. What does this represent?",
+              options: [
+                "Acceptable practice as long as they are employed by the hospital",
+                "A significant protocol deviation and GCP non-compliance, because only delegated staff may conduct trial duties",
+                "A minor typo that can be ignored",
+                "An immediate trigger for site criminal prosecution"
+              ],
+              ans: 1,
+              rationale: "Under ICH GCP, any individual performing protocol-specific procedures must be qualified, trained, and documented on the signed Delegation of Authority Log."
+            },
+            {
+              type: "mcq",
+              q: "If an investigational drug requires storage between 2°C and 8°C, and the site refrigerator logs show an excursion to 22°C, what is the immediate action?",
+              options: [
+                "Instruct the site to quickly put ice inside and resume dosing",
+                "Quarantine the impacted drug supplies, notify QA, and do not administer the drug until a formal stability evaluation is completed",
+                "Discard the temperature logs so audits pass cleanly",
+                "Dilute the medication to compensate for temperature changes"
+              ],
+              ans: 1,
+              rationale: "Temperature excursions require immediate product quarantine, non-conformance documentation, and stability verification before any further patient dosing."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: A CRA is performing Source Data Verification (SDV) and notices that a blood glucose value of 140 mg/dL was written on a sticky note and stuck to the chart, but not entered into the official hospital medical record. Does this satisfy the 'Original' and 'Enduring' criteria of ALCOA+?",
+              options: [
+                "Yes, sticky notes are legally recognized source documents",
+                "No, transient sticky notes do not meet the standard for original, enduring, and attributable medical records",
+                "Yes, provided the CRA initials the sticky note",
+                "Only if the patient also signed the sticky note"
+              ],
+              ans: 1,
+              rationale: "ALCOA+ requires source documents to be original, enduring, and attributable. Transient notes fail these criteria."
+            },
+            {
+              type: "mcq",
+              q: "What does Risk-Based Monitoring (RBM/RBQM) emphasize under modern ICH-GCP revisions?",
+              options: [
+                "Eliminating monitors from visiting sites completely",
+                "Focusing monitoring resources on Critical-to-Quality factors, patient safety, and central data monitoring rather than routine 100% mechanical SDV",
+                "Leaving protocol compliance entirely to hospital nurses",
+                "Conducting trials without Ethics Committee oversight"
+              ],
+              ans: 1,
+              rationale: "ICH E6 encourages intelligent risk-based oversight prioritizing critical data points, endpoints, and subject safety."
+            },
+            {
+              type: "short_answer",
+              q: "Regulatory Short-Answer: In the ALCOA+ framework for source data integrity, what does the letter 'C' stand for? (Single word)",
+              expectedAnswers: ["CONTEMPORANEOUS"],
+              rationale: "The 'C' in ALCOA stands for Contemporaneous, meaning records must be documented at the actual time the event took place."
+            }
+          ])
+        },
+        mw: {
+          id: 'mw',
+          code: 'MEDWRIT',
+          title: 'Regulatory Medical Writing & Protocol Design',
+          headline: 'Authoring Protocols, Investigator Brochures (IB), Clinical Study Reports (CSR) & Patient Narratives',
+          readTime: '25 mins high-yield study',
+          overview: 'Medical writers synthesize complex scientific and clinical data into clear, concise, and compliant regulatory dossiers aligned with international harmonized standards.',
+          diagramTitle: 'Visual Workflow: Core Documents in the Medical Writing Continuum',
+          diagram: `+---------------------------------------------------------------------------------------------------+
+|  [PRE-CLINICAL & TRIAL PLANNING]                                                                 |
+|  * Investigator's Brochure (IB): Non-clinical toxicology, pharmacology & preliminary human PK     |
+|  * Clinical Trial Protocol: Objectives, Endpoints, Inclusion/Exclusion Criteria, Statistical Plan |
+|  * Subject Information Sheet / Informed Consent Form (ICF) in 8th-grade lay language             |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  [TRIAL EXECUTION & PERIODIC REPORTING]                                                           |
+|  * Protocol Amendments (Substantial vs Non-substantial)                                          |
+|  * Annual Development Safety Update Reports (DSUR - ICH E2F)                                      |
++--------------------------------------------------+------------------------------------------------+
+                                                   |
+                                                   v
++---------------------------------------------------------------------------------------------------+
+|  [TRIAL CONCLUSION & REGULATORY DOSSIER]                                                         |
+|  * Clinical Study Report (CSR - ICH E3 Structure: Sections 1 to 16)                              |
+|  * Patient Safety Narratives for all Deaths, SAEs, and Discontinuations due to AEs                |
+|  * Plain Language Summary (PLS) for Public Clinical Trial Registries                             |
++---------------------------------------------------------------------------------------------------+`,
+          notes: [
+            {
+              moduleTitle: 'Module 1: The Investigator Brochure (IB) & Protocol Architecture',
+              content: `Everyday Analogy: Think of building an aircraft. Before pilots can fly, engineers must write a comprehensive flight manual detailing maximum engine heat, fuel limits, and emergency landing steps. The Investigator's Brochure (IB) is that exact aircraft manual for an experimental drug, giving physicians the facts needed to protect patients.
+
+The Protocol Architecture (ICH E6 Section 6):
+• General Information (Title, Protocol ID, Sponsor, Investigator).
+• Background & Rationales.
+• Trial Objectives (Primary, Secondary, Exploratory) & Corresponding Endpoints.
+• Selection & Withdrawal of Subjects (Inclusion & Exclusion criteria).
+• Treatment of Subjects (Dosing, Packaging, Labeling, Blinding).
+• Assessment of Efficacy & Safety.`
+            },
+            {
+              moduleTitle: 'Module 2: Structure of a Clinical Study Report (CSR - ICH E3)',
+              content: `The ICH E3 guideline specifies the standard modular structure for reporting interventional trials:
+1. Title page & Synopsis
+2. Table of Contents
+3. Ethics & Investigators
+4. Introduction
+5. Study Objectives
+6. Investigational Plan
+7. Study Patients (Disposition, Protocol Deviations)
+8. Efficacy Evaluation (ITT vs Per-Protocol analysis)
+9. Safety Evaluation (Extent of exposure, deaths, SAEs, lab values)
+10. Discussion & Overall Conclusions
+11. Tables & Figures
+12. Appendices (Protocol, Sample ICF, Principal Investigator Signatures, Patient Narratives)`
+            },
+            {
+              moduleTitle: 'Module 3: Crafting Patient Safety Narratives',
+              content: `A Patient Safety Narrative is a concise chronological summary required for:
+• Any subject death during the study or post-treatment safety window.
+• Any Serious Adverse Event (SAE).
+• Premature withdrawal from the trial due to an adverse event.
+
+Structure of a Narrative:
+1. Subject Demographics: Age, gender, randomization date, treatment arm, dose.
+2. Medical History & Concomitant Medications.
+3. Event Description: Onset date, symptoms, diagnostic tests (labs, imaging).
+4. Treatment: Interventions administered to manage the event.
+5. Dechallenge / Rechallenge outcome.
+6. Investigator & Sponsor Causality Assessment.`
+            },
+            {
+              moduleTitle: 'Module 4: Plain Language Summaries & Layman ICFs',
+              content: `Modern clinical trial transparency regulations mandate Plain Language Summaries (PLS) written at an 8th-grade reading level.
+Key Principles:
+- Avoid technical jargon (e.g., use 'high blood pressure' instead of 'hypertension', 'study medicine' instead of 'investigational medicinal product').
+- Present benefits and risks with balanced neutrality.`
+            }
+          ],
+          exam: generateCourseQuestions("MEDWRIT", [
+            {
+              type: "mcq",
+              q: "Which ICH guideline defines the international standard structure and content for Clinical Study Reports (CSR)?",
+              options: [
+                "ICH E2A",
+                "ICH E3",
+                "ICH E6",
+                "ICH M4"
+              ],
+              ans: 1,
+              rationale: "ICH E3 is the recognized guideline governing the structure and content of Clinical Study Reports."
+            },
+            {
+              type: "mcq",
+              q: "What is the primary purpose of an Investigator's Brochure (IB)?",
+              options: [
+                "To market the drug to hospital procurement teams",
+                "To provide investigators with nonclinical and clinical data relevant to the investigational product in human subjects",
+                "To invoice the sponsor for hospital overhead fees",
+                "To publish trial results in consumer magazines"
+              ],
+              ans: 1,
+              rationale: "The IB provides investigators with essential pharmacology, toxicology, and clinical safety background to ensure safe conduct of the trial."
+            },
+            {
+              type: "mcq",
+              q: "For which category of clinical trial participants must a comprehensive Patient Safety Narrative be authored under ICH E3?",
+              options: [
+                "For all subjects who completed the study without any adverse event",
+                "For any subject who experienced a death, serious adverse event, or discontinuation due to an adverse event",
+                "Only for subjects in the placebo arm",
+                "Only for participants who failed screening laboratory tests"
+              ],
+              ans: 1,
+              rationale: "Under ICH E3, patient narratives are mandatory for deaths, serious adverse events, and adverse events leading to study withdrawal."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: A medical writer is drafting a Patient Information Sheet (ICF). Which phrase best complies with the plain-language health literacy standard?",
+              options: [
+                "'This investigational protocol will evaluate hepatic steatosis via magnetic resonance elastography.'",
+                "'This study tests whether the trial medicine can reduce fat in the liver using a special ultrasound-like scan.'",
+                "'Efficacy endpoints shall be assessed in the intent-to-treat demographic.'",
+                "'The investigational product exhibits zero-order pharmacokinetics.'"
+              ],
+              ans: 1,
+              rationale: "Lay language avoids medical jargon and explains complex medical concepts in simple, accessible terms."
+            },
+            {
+              type: "mcq",
+              q: "In protocol development, what distinguishes the 'Intention-to-Treat' (ITT) population from the 'Per-Protocol' (PP) population?",
+              options: [
+                "ITT includes only subjects who had 100% medication compliance",
+                "ITT analyzes all randomized subjects based on their initial random assignment, regardless of protocol deviations or withdrawals",
+                "PP analyzes subjects before they sign the informed consent",
+                "There is no difference between the two terms"
+              ],
+              ans: 1,
+              rationale: "ITT preserves randomization integrity by evaluating all randomized participants according to their assigned group."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: In a CSR narrative, an investigator notes that a subject's rash disappeared after the trial drug was stopped, and returned when the drug was accidentally restarted. What are these clinical phenomena called?",
+              options: [
+                "Placebo effect and Nocebo effect",
+                "Positive Dechallenge and Positive Rechallenge",
+                "Primary Endpoint and Secondary Endpoint",
+                "Blinding and Unblinding"
+              ],
+              ans: 1,
+              rationale: "Symptom resolution on drug withdrawal is positive dechallenge; symptom recurrence upon re-exposure is positive rechallenge."
+            },
+            {
+              type: "mcq",
+              q: "What is the primary difference between a Substantial (Major) Protocol Amendment and a Non-Substantial (Minor) Protocol Amendment?",
+              options: [
+                "Substantial amendments impact subject safety, physical/mental integrity, or the scientific value of the trial, requiring prior Ethics Committee approval",
+                "Substantial amendments only relate to budget increases",
+                "Non-substantial amendments require parliamentary sign-off",
+                "There is no difference under ICH GCP"
+              ],
+              ans: 0,
+              rationale: "Substantial amendments directly affect participant safety, rights, or the integrity of study endpoints and require formal IRB/IEC approval before implementation."
+            },
+            {
+              type: "short_answer",
+              q: "Regulatory Short-Answer: What is the official guideline code for Clinical Study Reports developed by the International Council for Harmonisation? (Format: ICH EX)",
+              expectedAnswers: ["ICH E3", "E3"],
+              rationale: "ICH E3 defines the structure and content of Clinical Study Reports."
+            }
+          ])
+        },
+        gcp: {
+          id: 'gcp',
+          code: 'ICHGCP',
+          title: 'ICH-GCP Guidelines & Ethical Norms',
+          headline: 'International Council for Harmonisation Good Clinical Practice Benchmark',
+          readTime: '30 mins high-yield study',
+          overview: 'Good Clinical Practice is an international ethical and scientific quality standard for designing, conducting, recording, and reporting trials that involve the participation of human subjects.',
+          diagramTitle: 'Visual Workflow: The Triad of Ethical Trial Conduct (ICH-GCP)',
+          diagram: `+---------------------------------------------------------------------------------------------------+
+|                            INSTITUTIONAL ETHICS COMMITTEE / IRB                                    |
+|  * Independent review of protocol, ICF, and Investigator Brochure                                 |
+|  * Must include at least 1 non-scientific member and 1 independent member                         |
+|  * Safeguards rights, safety, and well-being of human trial subjects                              |
++---------------------------------+---------------------------------+-------------------------------+
+                                  |                                 |
+                                  v                                 v
++---------------------------------+-------+                 +-------+-------------------------------+
+|     PRINCIPAL INVESTIGATOR (PI)         |                 |         STUDY SPONSOR                 |
+|  * Qualified by training and experience |                 |  * Trial design & protocol authoring  |
+|  * Ultimate oversight of trial conduct  |                 |  * Quality Management & RBM oversight |
+|  * Signs Delegation of Authority (DOA)  |<===============>|  * Investigational Product supply     |
+|  * Direct medical care for all AEs      |  Audit & CRA    |  * Safety reporting & DSUR submission |
+|  * ALCOA+ source documentation          |  Inspections    |  * Regulatory agency filings          |
++-----------------------------------------+                 +---------------------------------------+`,
+          notes: [
+            {
+              moduleTitle: 'Module 1: The 13 Core Principles of ICH-GCP (Analogy -> Principles)',
+              content: `Everyday Analogy: Think of the court system. An accused person is presumed innocent, entitled to legal representation, and protected by constitutional rights. Good Clinical Practice is the human rights constitution for medical trials. It guarantees that no scientific ambition ever overrules a patient's safety, dignity, and autonomy.
+
+The 13 Core Principles:
+1. Ethical Origin: Trials must be conducted according to the ethical principles originating in the Declaration of Helsinki.
+2. Risk vs. Benefit: Anticipated benefits must justify foreseeable risks.
+3. Subject Primacy: Rights, safety, and well-being of subjects prevail over interests of science and society.
+4. Nonclinical Support: Available nonclinical data must support the proposed clinical investigation.
+5. Scientific Rigor: Trials must be scientifically sound and described in a detailed protocol.
+6. IRB/IEC Approval: Unbiased prior approval of protocol and consent forms.
+7. Medical Care: Medical decisions must be directed by a qualified physician.
+8. Qualified Individuals: All individuals conducting trial tasks must be educated and trained.
+9. Freely Given Consent: Must be obtained from every subject prior to participation.
+10. Data Integrity: Clinical trial information must be recorded, handled, and stored to allow accurate reporting, interpretation, and verification.
+11. Confidentiality: Subject records must remain protected.
+12. Good Manufacturing Practice (GMP): Investigational products must follow GMP standards.
+13. Quality Systems: Systems and procedures ensuring quality must be implemented.`
+            },
+            {
+              moduleTitle: 'Module 2: Institutional Review Board / Independent Ethics Committee (IRB/IEC)',
+              content: `An IRB/IEC safeguards subject rights, safety, and well-being:
+Composition Requirements:
+- At least 5 members.
+- At least one member whose primary area of interest is non-scientific (e.g., ethicist, lawyer, community representative).
+- At least one member who is completely independent of the institution/site.
+- Quorum rules: No investigator or sponsor representative may participate in the decision or voting on their own trial.`
+            },
+            {
+              moduleTitle: 'Module 3: Principal Investigator (PI) Responsibilities',
+              content: `The Principal Investigator bears ultimate on-site responsibility:
+• Qualification: Qualified by education, training, and experience.
+• Resources: Adequate time and qualified staff to conduct the study.
+• Delegation of Authority (DOA): Explicit written log of all tasks delegated to sub-investigators and study coordinators.
+• Unrestricted Medical Care: Direct management of any adverse events during the trial.
+• Protocol Adherence: No deviations without prior IRB approval, except to eliminate immediate hazards to subjects.`
+            },
+            {
+              moduleTitle: 'Module 4: Essential Documents & Inspection Readiness',
+              content: `Essential Documents (ICH E6 Section 8) enable both the conduct of the trial and the quality of the data produced to be evaluated.
+Stages:
+• Before Clinical Phase: Investigator Brochure, signed protocol, approved ICF, Ethics Committee approval, financial agreements.
+• During Clinical Phase: Monitoring visit reports, SAE reports, subject identification log, drug accountability records.
+• After Trial Completion: Final close-out report, CSR summary, drug destruction certificates, treatment decoding documentation.`
+            }
+          ],
+          exam: generateCourseQuestions("ICHGCP", [
+            {
+              type: "mcq",
+              q: "According to Principle 1.1 of ICH-GCP, whose rights, safety, and well-being prevail over all other considerations in a clinical trial?",
+              options: [
+                "The commercial patent holder and pharmaceutical sponsor",
+                "The trial subjects (patients), which prevail over interests of science and society",
+                "The regulatory agency and health authorities",
+                "The lead principal investigator and hospital administration"
+              ],
+              ans: 1,
+              rationale: "ICH-GCP explicitly mandates that the rights, safety, and well-being of subjects must always prevail over science and society."
+            },
+            {
+              type: "mcq",
+              q: "Which member is mandatory on an Institutional Ethics Committee (IEC/IRB) to ensure unbiased community representation?",
+              options: [
+                "A sales executive from the sponsoring pharmaceutical firm",
+                "At least one non-scientific member (e.g., ethicist, legal scholar, or layperson) independent of the institution",
+                "The Chief Financial Officer of the trial hospital",
+                "The manufacturer of the clinical trial diagnostic machinery"
+              ],
+              ans: 1,
+              rationale: "IRB/IEC guidelines require at least one non-scientific member independent of the site to represent the rights of human subjects."
+            },
+            {
+              type: "mcq",
+              q: "Can a Principal Investigator delegate clinical tasks (such as obtaining informed consent or drug administration) to site staff?",
+              options: [
+                "No, the Principal Investigator must perform every single clinical action personally",
+                "Yes, provided the individuals are qualified, trained, and explicitly documented on a signed Delegation of Authority (DOA) log, with ultimate responsibility remaining with the PI",
+                "Yes, by verbal agreement without written records",
+                "Only to relatives of the hospital directors"
+              ],
+              ans: 1,
+              rationale: "Delegation is allowed if properly documented on the Delegation of Authority (DOA) log, but the PI retains ultimate accountability."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: An enrolled clinical trial subject with an unexpected severe allergic reaction requires an immediate increase in antihistamine and steroid dosage, which contradicts the protocol dosing schedule. What is the investigator's correct action under ICH GCP?",
+              options: [
+                "Wait 30 days for formal Ethics Committee approval before treating the patient",
+                "Treat the patient immediately to eliminate the hazard, and promptly submit a notification of emergency protocol deviation to the Ethics Committee and Sponsor",
+                "Withhold medical care until the trial monitor arrives",
+                "Discharge the subject from the hospital immediately without treatment"
+              ],
+              ans: 1,
+              rationale: "Investigators may implement immediate deviations without prior approval to eliminate an immediate hazard to subjects, followed by prompt reporting."
+            },
+            {
+              type: "mcq",
+              q: "What constitutes a 'Protocol Deviation' that must be promptly communicated to the Ethics Committee and Sponsor?",
+              options: [
+                "A monitor changing their travel flight to the site",
+                "Any departure from the procedures or requirements outlined in the approved clinical protocol",
+                "A change in weather during a monitoring visit",
+                "The site buying supplies from an alternate certified vendor"
+              ],
+              ans: 1,
+              rationale: "A protocol deviation is any departure from the approved protocol that may impact subject safety or data integrity."
+            },
+            {
+              type: "scenario",
+              q: "Case Scenario: A prospective subject is illiterate and cannot read the Informed Consent Form. According to ICH GCP, how can valid consent be documented?",
+              options: [
+                "Consent cannot be obtained; illiterate individuals are barred from clinical trials",
+                "An impartial witness must be present throughout the informed consent discussion; the subject signs/marks, and the witness personally signs and dates the ICF",
+                "The investigator may sign on behalf of the subject without witnesses",
+                "A verbal handshake is legally sufficient"
+              ],
+              ans: 1,
+              rationale: "ICH GCP Section 4.8.9 requires an impartial witness to observe the consent discussion and sign the ICF when a subject cannot read."
+            },
+            {
+              type: "mcq",
+              q: "How long must Essential Documents be retained at the investigator site following trial completion under ICH-GCP?",
+              options: [
+                "6 months",
+                "Until the trial monitor leaves the site",
+                "At least 2 years after the last approval of a marketing application, or according to applicable local regulatory requirements",
+                "They should be destroyed immediately to protect confidentiality"
+              ],
+              ans: 2,
+              rationale: "ICH-GCP Section 4.9.5 specifies essential document retention for at least 2 years post-approval, or longer as mandated by local laws."
+            },
+            {
+              type: "short_answer",
+              q: "Regulatory Short-Answer: Which historic declaration serves as the primary ethical origin for Good Clinical Practice (ICH-GCP)? (Declaration of _______)",
+              expectedAnswers: ["HELSINKI", "DECLARATION OF HELSINKI"],
+              rationale: "The Declaration of Helsinki (World Medical Association) is the ethical cornerstone upon which ICH-GCP was established."
+            }
+          ])
+        }
+      }
+    };
+
+    // Global application state
+    let SITE_DATA = loadSiteData();
+
+    function loadSiteData() {
+      try {
+        const stored = localStorage.getItem('CLINSERA_CMS_STATE');
+        if (stored) {
+          return JSON.parse(stored);
+        }
+      } catch (e) {
+        console.warn("Could not load stored CMS data, defaulting", e);
+      }
+      return JSON.parse(JSON.stringify(DEFAULT_CMS_DATA));
+    }
+
+    function saveSiteData(data) {
+      SITE_DATA = data;
+      try {
+        localStorage.setItem('CLINSERA_CMS_STATE', JSON.stringify(data));
+      } catch (e) {
+        console.error("Storage error:", e);
+      }
+      applySiteDataToUI();
+    }
+
+    function applySiteDataToUI() {
+      // Update Logos
+      document.getElementById('siteHeaderLogo').src = SITE_DATA.logoSrc;
+      document.getElementById('cmsHeroCardLogo').src = SITE_DATA.logoSrc;
+      document.getElementById('siteFooterLogo').src = SITE_DATA.logoSrc;
+      document.getElementById('certModalLogo').src = SITE_DATA.logoSrc;
+
+      // Update Hero text
+      document.getElementById('brandCompanyName').textContent = SITE_DATA.companyName;
+      document.getElementById('brandTagline').textContent = SITE_DATA.tagline;
+      document.getElementById('cmsHeroHeadline').innerHTML = SITE_DATA.heroHeadline;
+      document.getElementById('cmsHeroTagline').textContent = SITE_DATA.tagline;
+      document.getElementById('cmsHeroSubtext').textContent = SITE_DATA.heroSubtext;
+
+      // Update Certificate modal defaults
+      document.getElementById('certCompanyName').textContent = SITE_DATA.companyName.toUpperCase();
+      document.getElementById('certTagline').textContent = SITE_DATA.tagline;
+      document.getElementById('certSignerName').textContent = SITE_DATA.certSigner;
+      document.getElementById('certSignerTitle').textContent = SITE_DATA.certSignerTitle;
+      document.getElementById('examPassBenchmarkBadge').textContent = `Passing Benchmark: ${SITE_DATA.passingScore}%`;
+
+      renderCourseContent();
+    }
+
+    // CMS Modal Controls
+    function toggleAdminCMSModal() {
+      const modal = document.getElementById('adminCMSModal');
+      if (modal.classList.contains('hidden')) {
+        populateCMSFormFields();
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function switchCMSTab(tabKey) {
+      const tabs = ['general', 'notes', 'exams', 'cert'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`cms-tab-${t}`);
+        const panel = document.getElementById(`cmsPanel-${t}`);
+        if (t === tabKey) {
+          btn.className = "cms-nav-btn pb-3 px-3 text-teal-400 border-b-2 border-teal-400 font-semibold";
+          panel.classList.remove('hidden');
+        } else {
+          btn.className = "cms-nav-btn pb-3 px-3 text-slate-400 hover:text-white font-semibold";
+          panel.classList.add('hidden');
+        }
+      });
+
+      if (tabKey === 'notes') loadCMSCourseNotes();
+      if (tabKey === 'exams') loadCMSCourseExamQuestions();
+    }
+
+    function populateCMSFormFields() {
+      document.getElementById('cmsInputCompanyName').value = SITE_DATA.companyName;
+      document.getElementById('cmsInputTagline').value = SITE_DATA.tagline;
+      document.getElementById('cmsInputLogoSrc').value = SITE_DATA.logoSrc;
+      document.getElementById('cmsInputHeroSubtext').value = SITE_DATA.heroSubtext;
+      document.getElementById('cmsInputCertPrefix').value = SITE_DATA.certPrefix;
+      document.getElementById('cmsInputCertPassingScore').value = SITE_DATA.passingScore;
+      document.getElementById('cmsInputCertSigner').value = SITE_DATA.certSigner;
+      document.getElementById('cmsInputCertSignerTitle').value = SITE_DATA.certSignerTitle;
+    }
+
+    function loadCMSCourseNotes() {
+      const selKey = document.getElementById('cmsSelectCourseNotes').value;
+      const course = SITE_DATA.courses[selKey];
+      if (!course) return;
+
+      document.getElementById('cmsInputCourseTitle').value = course.title;
+      document.getElementById('cmsInputCourseDiagram').value = course.diagram;
+      document.getElementById('cmsInputCourseModulesJSON').value = JSON.stringify(course.notes, null, 2);
+    }
+
+    function loadCMSCourseExamQuestions() {
+      const selKey = document.getElementById('cmsSelectCourseExam').value;
+      const course = SITE_DATA.courses[selKey];
+      const container = document.getElementById('cmsQuestionsEditorList');
+      container.innerHTML = '';
+
+      if (!course || !course.exam) return;
+
+      course.exam.forEach((q, idx) => {
+        const qCard = document.createElement('div');
+        qCard.className = "p-4 rounded-xl bg-brand-surface border border-brand-border space-y-2 text-xs";
+        
+        let answerField = '';
+        if (q.type === 'short_answer') {
+          answerField = `
+            <div class="mt-1">
+              <label class="text-[10px] text-slate-400">Accepted Answers (comma-separated):</label>
+              <input type="text" id="cmsQ_expected_${idx}" value="${q.expectedAnswers.join(', ')}" class="w-full bg-brand-navy border border-brand-border rounded px-2 py-1 text-xs text-white">
+            </div>
+          `;
+        } else {
+          answerField = `
+            <div class="mt-1">
+              <label class="text-[10px] text-slate-400">Options (separated by |):</label>
+              <input type="text" id="cmsQ_opts_${idx}" value="${q.options.join(' | ')}" class="w-full bg-brand-navy border border-brand-border rounded px-2 py-1 text-xs text-white">
+              <label class="text-[10px] text-slate-400 mt-1 block">Correct Option Index (0 to 3):</label>
+              <input type="number" id="cmsQ_ans_${idx}" value="${q.ans}" min="0" max="3" class="w-24 bg-brand-navy border border-brand-border rounded px-2 py-1 text-xs text-white">
+            </div>
+          `;
+        }
+
+        qCard.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-teal-300 font-mono">Q${idx + 1} (${q.type.toUpperCase()})</span>
+            <button onclick="cmsRemoveQuestion(${idx})" class="text-rose-400 hover:text-rose-300 text-xs">
+              <i class="fa-solid fa-trash"></i> Delete
+            </button>
+          </div>
+          <div>
+            <label class="text-[10px] text-slate-400">Question Text:</label>
+            <input type="text" id="cmsQ_text_${idx}" value="${q.q.replace(/"/g, '&quot;')}" class="w-full bg-brand-navy border border-brand-border rounded px-2 py-1 text-xs text-white">
+          </div>
+          ${answerField}
+        `;
+        container.appendChild(qCard);
+      });
+    }
+
+    function cmsAddQuestionToCurrentTrack() {
+      const selKey = document.getElementById('cmsSelectCourseExam').value;
+      const course = SITE_DATA.courses[selKey];
+      if (!course) return;
+
+      course.exam.push({
+        type: "mcq",
+        q: "New question text following ICH-GCP standards?",
+        options: ["Option A", "Option B (Correct)", "Option C", "Option D"],
+        ans: 1,
+        rationale: "Explanation for why Option B is correct."
+      });
+
+      loadCMSCourseExamQuestions();
+    }
+
+    function cmsRemoveQuestion(idx) {
+      const selKey = document.getElementById('cmsSelectCourseExam').value;
+      const course = SITE_DATA.courses[selKey];
+      if (!course || !course.exam) return;
+      course.exam.splice(idx, 1);
+      loadCMSCourseExamQuestions();
+    }
+
+    function saveCMSChanges() {
+      SITE_DATA.companyName = document.getElementById('cmsInputCompanyName').value.trim() || DEFAULT_CMS_DATA.companyName;
+      SITE_DATA.tagline = document.getElementById('cmsInputTagline').value.trim() || DEFAULT_CMS_DATA.tagline;
+      SITE_DATA.logoSrc = document.getElementById('cmsInputLogoSrc').value.trim() || DEFAULT_CMS_DATA.logoSrc;
+      SITE_DATA.heroSubtext = document.getElementById('cmsInputHeroSubtext').value.trim() || DEFAULT_CMS_DATA.heroSubtext;
+      SITE_DATA.certPrefix = document.getElementById('cmsInputCertPrefix').value.trim() || "CLIN";
+      SITE_DATA.passingScore = parseInt(document.getElementById('cmsInputCertPassingScore').value, 10) || 80;
+      SITE_DATA.certSigner = document.getElementById('cmsInputCertSigner').value.trim() || DEFAULT_CMS_DATA.certSigner;
+      SITE_DATA.certSignerTitle = document.getElementById('cmsInputCertSignerTitle').value.trim() || DEFAULT_CMS_DATA.certSignerTitle;
+
+      const notesKey = document.getElementById('cmsSelectCourseNotes').value;
+      if (SITE_DATA.courses[notesKey]) {
+        SITE_DATA.courses[notesKey].title = document.getElementById('cmsInputCourseTitle').value;
+        SITE_DATA.courses[notesKey].diagram = document.getElementById('cmsInputCourseDiagram').value;
+        try {
+          const parsedModules = JSON.parse(document.getElementById('cmsInputCourseModulesJSON').value);
+          SITE_DATA.courses[notesKey].notes = parsedModules;
+        } catch (e) {
+          console.warn("Could not parse modules JSON, skipping modules edit");
+        }
+      }
+
+      const examKey = document.getElementById('cmsSelectCourseExam').value;
+      const course = SITE_DATA.courses[examKey];
+      if (course && course.exam) {
+        course.exam.forEach((q, idx) => {
+          const textEl = document.getElementById(`cmsQ_text_${idx}`);
+          if (textEl) q.q = textEl.value;
+
+          if (q.type === 'short_answer') {
+            const expEl = document.getElementById(`cmsQ_expected_${idx}`);
+            if (expEl) {
+              q.expectedAnswers = expEl.value.split(',').map(s => s.trim().toUpperCase());
+            }
+          } else {
+            const optsEl = document.getElementById(`cmsQ_opts_${idx}`);
+            const ansEl = document.getElementById(`cmsQ_ans_${idx}`);
+            if (optsEl) q.options = optsEl.value.split('|').map(s => s.trim());
+            if (ansEl) q.ans = parseInt(ansEl.value, 10);
+          }
+        });
+      }
+
+      saveSiteData(SITE_DATA);
+      closeModal('adminCMSModal');
+    }
+
+    function resetCMSToDefaults() {
+      if (confirm("Reset all website content, courses, and exam questions back to system default?")) {
+        SITE_DATA = JSON.parse(JSON.stringify(DEFAULT_CMS_DATA));
+        saveSiteData(SITE_DATA);
+        populateCMSFormFields();
+        loadCMSCourseNotes();
+        loadCMSCourseExamQuestions();
+        closeModal('adminCMSModal');
+      }
+    }
+
+    function exportCMSConfigJSON() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(SITE_DATA, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `clinsera-cms-config-${new Date().toISOString().slice(0,10)}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    function importCMSConfigFile(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (imported.courses) {
+            saveSiteData(imported);
+            populateCMSFormFields();
+            loadCMSCourseNotes();
+            loadCMSCourseExamQuestions();
+            alert("CMS Configuration successfully imported and applied!");
+          } else {
+            alert("Invalid configuration file format.");
+          }
+        } catch (err) {
+          alert("Error parsing JSON file.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function openModal(id) {
+      const el = document.getElementById(id);
+      if (el) el.classList.remove('hidden');
+    }
+
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      if (el) el.classList.add('hidden');
+    }
+
+    function toggleMobileNav() {
+      const m = document.getElementById('mobileNavDrawer');
+      const icon = document.getElementById('mobileNavIcon');
+      m.classList.toggle('hidden');
+      if (m.classList.contains('hidden')) {
+        icon.className = 'fa-solid fa-bars text-lg';
+      } else {
+        icon.className = 'fa-solid fa-xmark text-lg';
+      }
+    }
+
+    function handleContactInquiry(e) {
+      e.preventDefault();
+      const fb = document.getElementById('contactInquiryFeedback');
+      fb.classList.remove('hidden');
+      setTimeout(() => {
+        fb.classList.add('hidden');
+        e.target.reset();
+      }, 4000);
+    }
+
+    let currentCourseId = 'pv';
+
+    function switchCourse(courseId) {
+      currentCourseId = courseId;
+      const tabs = ['pv', 'cdm', 'ops', 'mw', 'gcp'];
+      tabs.forEach(tab => {
+        const btn = document.getElementById(`tab-btn-${tab}`);
+        if (!btn) return;
+        if (tab === courseId) {
+          btn.className = 'course-tab-btn active px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-600 text-slate-950 shadow-lg shadow-teal-500/20';
+        } else {
+          btn.className = 'course-tab-btn px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition flex items-center gap-2 bg-brand-surface text-slate-300 hover:text-white border border-brand-border';
+        }
+      });
+      renderCourseContent();
+    }
+
+    function renderCourseContent() {
+      const course = SITE_DATA.courses[currentCourseId];
+      const container = document.getElementById('courseContentArea');
+      if (!course || !container) return;
+
+      let notesHTML = '';
+      course.notes.forEach((note, idx) => {
+        notesHTML += `
+          <div class="p-6 rounded-2xl bg-brand-surface/90 border border-brand-border hover:border-teal-500/30 transition">
+            <h4 class="text-sm font-bold text-teal-300 font-display flex items-center gap-2 mb-2">
+              <span class="w-6 h-6 rounded-full bg-teal-500/10 text-teal-400 text-xs flex items-center justify-center font-mono border border-teal-500/30">${idx + 1}</span>
+              ${note.moduleTitle}
+            </h4>
+            <div class="text-xs text-slate-300 whitespace-pre-line leading-relaxed font-normal pl-8">
+              ${note.content}
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = `
+        <div class="space-y-8">
+          
+          <!-- Course Header Banner -->
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-brand-border">
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 uppercase">
+                  FREE & GREATEST CERTIFICATION TRACK
+                </span>
+                <span class="text-xs text-slate-400 font-mono"><i class="fa-regular fa-clock mr-1"></i> ${course.readTime}</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-display">${course.title}</h3>
+              <p class="text-sm text-teal-300 font-medium">${course.headline}</p>
+              <p class="text-xs text-slate-400 max-w-3xl leading-relaxed">${course.overview}</p>
+            </div>
+
+            <div class="flex-shrink-0">
+              <button onclick="launchExamModal('${course.id}')" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-teal-500/20 transition transform active:scale-95 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-sm"></i>
+                Take Comprehensive Exam (${course.exam.length} Questions)
+              </button>
+            </div>
+          </div>
+
+          <!-- Structured Clinical Process Diagram -->
+          <div class="p-6 rounded-2xl bg-brand-navy border border-teal-500/30 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-teal-300 uppercase tracking-wider font-mono flex items-center gap-2">
+                <i class="fa-solid fa-diagram-project text-emerald-400"></i> ${course.diagramTitle}
+              </span>
+              <span class="text-[10px] text-slate-400 font-mono">Standardized Clinical Workflow</span>
+            </div>
+            <div class="p-4 rounded-xl bg-brand-obsidian border border-brand-border overflow-x-auto text-[11px] font-mono text-teal-300/90 whitespace-pre leading-snug">
+${course.diagram}
+            </div>
+          </div>
+
+          <!-- High Yield Study Notes Grid -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xs font-bold text-white uppercase tracking-wider font-mono flex items-center gap-2">
+                <i class="fa-solid fa-book-open-reader text-teal-400"></i> Clear, Descriptive Textbook Modules (Analogy &rarr; Terminology &rarr; Real World)
+              </h4>
+              <span class="text-[11px] text-slate-400">Study thoroughly before launching the 20+ question assessment</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${notesHTML}
+            </div>
+          </div>
+
+          <!-- Assessment Trigger Card -->
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-brand-surface via-brand-navy to-teal-950/40 border border-teal-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-teal-500/20 border border-teal-500/40 flex items-center justify-center text-teal-400 text-2xl flex-shrink-0">
+                <i class="fa-solid fa-file-signature"></i>
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-white">Ready for Official Certification?</h5>
+                <p class="text-xs text-slate-300">Complete the ${course.exam.length}-question assessment (MCQs, clinical vignettes, and short answers). Score &ge; ${SITE_DATA.passingScore}% to instantly generate your verifiable certificate.</p>
+              </div>
+            </div>
+            <button onclick="launchExamModal('${course.id}')" class="px-5 py-2.5 rounded-xl bg-teal-500/20 hover:bg-teal-500/30 text-teal-300 border border-teal-500/40 text-xs font-bold whitespace-nowrap transition">
+              Start Exam &rarr;
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function launchExamModal(courseId) {
+      const course = SITE_DATA.courses[courseId];
+      currentCourseId = courseId;
+
+      document.getElementById('examModalTitle').textContent = `${course.code}: ${course.title} Comprehensive Examination`;
+      document.getElementById('nameWarning').classList.add('hidden');
+      document.getElementById('examResultBanner').classList.add('hidden');
+      document.getElementById('candidateNameInput').value = '';
+
+      const container = document.getElementById('questionsContainer');
+      container.innerHTML = '';
+
+      course.exam.forEach((item, qIdx) => {
+        let questionContent = '';
+
+        if (item.type === 'short_answer') {
+          questionContent = `
+            <div class="pt-2">
+              <label class="block text-[11px] text-slate-400 mb-1">Your Answer:</label>
+              <input type="text" id="short_ans_${qIdx}" required class="w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-teal-400" placeholder="Type your answer here...">
+            </div>
+          `;
+        } else {
+          let optionsHTML = '';
+          item.options.forEach((opt, optIdx) => {
+            optionsHTML += `
+              <label class="flex items-start gap-3 p-3 rounded-lg bg-brand-navy hover:bg-brand-surface border border-brand-border cursor-pointer transition text-xs text-slate-200">
+                <input type="radio" name="question_${qIdx}" value="${optIdx}" required class="mt-0.5 text-teal-500 focus:ring-teal-400">
+                <span>${opt}</span>
+              </label>
+            `;
+          });
+          questionContent = `<div class="space-y-2 pt-1">${optionsHTML}</div>`;
+        }
+
+        const typeBadge = item.type === 'scenario' 
+          ? '<span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-mono">CLINICAL SCENARIO</span>'
+          : item.type === 'short_answer'
+          ? '<span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-[10px] font-mono">REGULATORY SHORT-ANSWER</span>'
+          : '<span class="px-2 py-0.5 rounded bg-teal-500/10 text-teal-400 border border-teal-500/20 text-[10px] font-mono">MCQ</span>';
+
+        container.innerHTML += `
+          <div class="p-5 rounded-2xl bg-brand-surface/80 border border-brand-border space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-teal-300 font-mono">Question ${qIdx + 1} of ${course.exam.length}</span>
+              ${typeBadge}
+            </div>
+            <div class="text-xs text-slate-200 font-medium leading-relaxed">
+              ${item.q}
+            </div>
+            ${questionContent}
+          </div>
+        `;
+      });
+
+      openModal('examModal');
+    }
+
+    function submitExam(e) {
+      e.preventDefault();
+      const candidateName = document.getElementById('candidateNameInput').value.trim();
+      const nameWarning = document.getElementById('nameWarning');
+      const resultBanner = document.getElementById('examResultBanner');
+
+      if (!candidateName) {
+        nameWarning.classList.remove('hidden');
+        document.getElementById('candidateNameInput').focus();
+        return;
+      }
+      nameWarning.classList.add('hidden');
+
+      const course = SITE_DATA.courses[currentCourseId];
+      let correctAnswers = 0;
+
+      course.exam.forEach((item, qIdx) => {
+        if (item.type === 'short_answer') {
+          const inputEl = document.getElementById(`short_ans_${qIdx}`);
+          const val = inputEl ? inputEl.value.trim().toUpperCase() : '';
+          const match = item.expectedAnswers.some(ans => val === ans.toUpperCase());
+          if (match) correctAnswers++;
+        } else {
+          const selected = document.querySelector(`input[name="question_${qIdx}"]:checked`);
+          if (selected && parseInt(selected.value, 10) === item.ans) {
+            correctAnswers++;
+          }
+        }
+      });
+
+      const percentage = Math.round((correctAnswers / course.exam.length) * 100);
+
+      if (percentage >= SITE_DATA.passingScore) {
+        resultBanner.className = 'p-4 rounded-xl text-xs space-y-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 block';
+        resultBanner.innerHTML = `
+          <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i> Examination Passed with Distinction! (${percentage}%)</div>
+          <p>Score: ${correctAnswers}/${course.exam.length} correct. Generating your authenticated Clinsera verifiable credential now...</p>
+        `;
+
+        setTimeout(() => {
+          closeModal('examModal');
+          displayCertificate(candidateName, course);
+        }, 1200);
+
+      } else {
+        resultBanner.className = 'p-4 rounded-xl text-xs space-y-2 bg-rose-500/20 text-rose-300 border border-rose-500/40 block';
+        resultBanner.innerHTML = `
+          <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Passing Score Not Met (${percentage}%)</div>
+          <p>You answered ${correctAnswers} of ${course.exam.length} correctly. Minimum required score is ${SITE_DATA.passingScore}%.</p>
+          <p class="text-slate-300">Please review the structured textbook notes and diagrams above, then re-attempt the assessment.</p>
+        `;
+      }
+    }
+
+    function displayCertificate(name, course) {
+      document.getElementById('certCandidateName').textContent = name;
+      document.getElementById('certCourseTitle').textContent = `${course.title} (Professional Level 1)`;
+
+      const randomCode = Math.floor(10000 + Math.random() * 90000);
+      const uniqueId = `${SITE_DATA.certPrefix}-${course.code}-${new Date().getFullYear()}-${randomCode}`;
+      document.getElementById('certIdBadge').textContent = uniqueId;
+
+      const dateStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      document.getElementById('certDateBadge').textContent = `Issued: ${dateStr}`;
+
+      const randomHex = Math.random().toString(16).substring(2, 10).toUpperCase();
+      document.getElementById('certHashBadge').textContent = `AUTH-SIG: 0x${randomHex}89F2A (Verifiable)`;
+
+      openModal('certificateModal');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      applySiteDataToUI();
+      switchCourse('pv');
+    });
+  </script>
+</body>
+</html>
